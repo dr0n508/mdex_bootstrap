@@ -1,113 +1,329 @@
-.container-color {
-  box-shadow: -1px -1px 1px 0px rgba(255, 255, 255, 0.3);
-  background: linear-gradient( 180deg,#4e60a7,#9baece 14%,rgba(226,242,252,.73) 33%,rgba(231,239,252,.71));
-}
-
-.home-assets-amount {
-  font-size: 32px;
-  color: #fff;
-  .amount-icon{
-    display: inline-block;
-    width: 55px;
-    height: 48px;
-    background: url("../../img/icon/home-assets-amount-icon.png");
-    background-size: cover;
+.home-assets {
+  transform: translateY(-115px);
+  .container-color {
+    box-shadow: -1px -1px 1px 0px rgba(255, 255, 255, 0.3);
+    background: linear-gradient( 180deg,#4e60a7,#9baece 14%,rgba(226,242,252,.73) 33%,rgba(231,239,252,.71));
+    border-radius: 20px;
+    padding: 50px;
   }
-}
 
-.home-info-pc {
-  .h-info-item {
-    margin: 0 12px;
-    height: 48px;
-    background: #fffdfa;
-    border-radius: 24px;
-    padding: 0 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .icon-img {
-      height: 30px;
-      width: 30px;
+  .home-assets-amount {
+    font-size: 32px;
+    color: #fff;
+    .text {
+      padding: 0 10px;
     }
-  }
-}
-
-.home__assets-price-card {
-  background-color: white;
-  box-shadow: rgba(10, 20, 111, 0.05) 0px 10px 20px 0px, rgba(255, 255, 255, 0.3) 1px 1px 1px 0px;
-
-
-  .card__item-key {
-    font-size: 12px
-  }
-  .card__item-value {
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .card__item-value.new-item-value.numbers {
-    span {
-      background-color: #000;
-      color: #fff;
-      border-radius: 4px;
-      //font-size: 16px;
+    .amount-icon{
       display: inline-block;
-      text-align: center;
-      padding-right: 1px;
-      width: 25px;
-      height: 25px;
-      line-height: 25px;
-      font-size: 16px;
+      width: 55px;
+      height: 48px;
+      background: url("../../img/icon/home-assets-amount-icon.png");
+      background-size: cover;
+    }
+    .amount-number {
+      font-weight: 500;
+      padding-right: 10px;
     }
   }
-}
 
-.home-input__wrap {
-  .input-wrap {
-    background-color: #fff;
-    header {
-      height: 60px;
-      border-radius: 8px 8px 0 0;
+  .home-info-pc {
+    margin-top: 25px;
+    .h-info-item {
+      margin: 0 12px;
+      height: 48px;
+      background: #fffdfa;
+      border-radius: 24px;
+      padding: 0 16px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      padding: 0 24px;
-
-    }
-    .board.header-img {
-      background-color: #04c19e;
-    }
-    .liuq.header-img{
-      background-color: #ffa62d;
+      .hi-num {
+        margin: 0 5px;
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .hi-name {
+        margin: 0 5px;
+        color: #7d7d7d;
+      }
+      .icon-img {
+        height: 30px;
+        width: 30px;
+      }
     }
   }
 
-}
-
-.home-input__current {
-  .current {
-    width: 538px;
-    height: 154px;
-    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, .06);
+  .price-card {
+    margin-top: 24px;
+    padding: 24px;
+    background-color: #fff;
     border-radius: 8px;
-    padding: 30px;
+    box-shadow: rgba(10, 20, 111, 0.05) 0px 10px 20px 0px, rgba(255, 255, 255, 0.3) 1px 1px 1px 0px;
 
-    background: url("../../img/bg/curent1.png");
+    .card-item {
+      .tooltip-button {
+        display: flex;
+        align-items: center;
+        img {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+    .card-item-key {
+      font-size: 12px;
+      color: #808eb5;
+      font-weight: 500;
+    }
+    .card-item-value {
+      font-size: 24px;
+      font-weight: 500;
+      .label-new-value {
+        font-size: 14px;
+      }
+      .count-down-number {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        padding-right: 1px;
+        font-size: 16px;
+        line-height: 25px;
+        color: #fff;
+        text-align: center;
+        background-color: #000;
+        border-radius: 4px;
+      }
+    }
   }
-  .current2 {
-    background: url("../../img/bg/curent2.png");
+
+  .home-input-wrap {
+    margin-top: 27px;
+    .input-wrap {
+      background-color: #fff;
+      width: calc(50% - 12px);
+      border-radius: 8px;
+      header {
+        color: white;
+      }
+      .name-icom {
+        span {
+          font-size: 28px;
+        }
+        .icon-img {
+          width: 36px;
+          height: 36px;
+          margin-right: 5px;
+        }
+      }
+      a {
+        font-weight: 500;
+        //color: white;
+      }
+      table {
+        width: 100%;
+        padding: 0 24px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 0 0 8px 8px;
+        color: $gray;
+        font-weight: 500;
+        border-collapse: initial;
+        th,
+        td {
+          width: 23%;
+          height: 53px;
+        }
+        th {
+          font-weight: 500;
+          border-bottom: 1px solid #dee0ed;
+        }
+        th.operation,
+        td.operation {
+          width: 31%;
+        }
+        tr {
+          td {
+            border-bottom: 1px dashed #dee0ed;
+          }
+          &:last-child td  {
+            border-bottom: none;
+          }
+        }
+        th.al, td.al {
+          //color: $gray-accent;
+        }
+      }
+
+      header {
+        height: 60px;
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+
+      }
+      .oper-buttons {
+        border: 1px solid #2c72f4;
+        color: #2c72f4;
+        border-radius: 4px;
+        font-size: 15px;
+        font-weight: 500;
+
+        a {
+          line-height: 26px;
+          min-width: 60px;
+          text-align: center;
+        }
+      }
+      .board.header-img {
+        //background-color: #04c19e;
+      }
+      .liuq.header-img{
+        //background-color: #ffa62d;
+      }
+    }
+
+  }
+
+  .home-input-current {
+    margin-top: 27px;
+    .current {
+      width: calc(50% - 12px);
+      height: 154px;
+      box-shadow: 0 2px 6px 2px rgba(0, 0, 0, .06);
+      border-radius: 8px;
+      padding: 30px;
+
+      background: url("../../img/bg/curent1.png");
+    }
+    .current2 {
+      background: url("../../img/bg/curent2.png");
+    }
+  }
+
+  .home-count-wrap {
+    background: #fff;
+    margin-top: 42px;
+    padding: 0 30px;
+    border-radius: 8px;
+    .row {
+      border-bottom: 1px solid #dee0ed;
+      line-height: 70px;
+      &:last-child {
+        border-bottom: none;
+      }
+      .count {
+        .desc {
+          color: #7d7d7d;
+          font-weight: 500;
+        }
+        .amount {
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+    @media only screen and (max-width: 1200px) {
+      .row {
+        border-bottom: none;
+        .count {
+          border-bottom: 1px solid #dee0ed;
+        }
+        .last-count {
+          border-bottom: none;
+        }
+      }
+    }
   }
 }
 
-.home-count__wrap {
-  background: #fff;
-  .count-wrap {
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    line-height: 70px;
-    border-bottom: 1px solid #dee0ed;
-    &:last-child {
-      border-bottom: none;
+.white-section {
+  background-color: white;
+  padding: 90px 0;
+}
+
+.home-using {
+  .item {
+    .item-icon {
+      width: 120px;
+      height: 120px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: inline-block;
+    }
+    .icon-1 {
+      background: url("../../img/icon/home-page/home-using/icon-1.png");
+
+    }
+    .icon-2 {
+      background: url("../../img/icon/home-page/home-using/icon-2.png");
+    }
+    .icon-3 {
+      background: url("../../img/icon/home-page/home-using/icon-3.png");
+    }
+  }
+}
+
+
+.auditing-agency-section,
+.partner-section {
+  .item {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    a {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      img {
+        filter: grayscale(100%);
+        opacity: .5;
+      }
+      &:hover {
+        img {
+          filter: grayscale(0%);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.auditing-agency-section {
+  .item {
+    height: 100px;
+    a {
+      img {
+        width: 210px;
+        height: 51px;
+      }
+    }
+  }
+}
+
+.partner-section {
+  .item {
+    height: 66px;
+    a {
+      img {
+        width: 139px;
+        height: 34px;
+      }
+    }
+  }
+}
+
+.details-section {
+  .wrap {
+    border-radius: 20px;
+    padding: 45px 0;
+    background: url("../../img/bg/home/details/bg-details.png") no-repeat 50% 50%;
+    background-size: cover;
+    h2 {
+      margin-bottom: 30px;
+      color: white;
     }
   }
 }
