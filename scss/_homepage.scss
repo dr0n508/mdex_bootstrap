@@ -82,6 +82,46 @@
         width: 30px;
       }
     }
+    @media only screen and (max-width: 992px) {
+      .hi-currency {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      background-color: white;
+      border-radius: 8px;
+      padding: 24px;
+      .h-info-item {
+        position: relative;
+        flex-wrap: wrap;
+        height: auto;
+        background: none;
+      }
+      .line {
+        flex-shrink: 0;
+        width: 1px;
+        height: 35px;
+        background-color: #e2e2e2;
+      }
+      .amount-numbercard-item-value {
+        flex-basis: 100%;
+      }
+    }
+    @media only screen and (max-width: 450px) {
+      .h-info-item {
+        padding: 0;
+        .icon-img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .hi-name {
+        font-size: 12px;
+      }
+      .amount-numbercard-item-value {
+        font-size: 14px;
+      }
+    }
   }
 
   .price-card {
