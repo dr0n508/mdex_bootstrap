@@ -54,5 +54,11 @@ $(document).ready(function() {
 
   setInterval(function() { makeTimer(); }, 1000);
 
+  //tooltips
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
 
 });

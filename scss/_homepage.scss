@@ -1,0 +1,113 @@
+.container-color {
+  box-shadow: -1px -1px 1px 0px rgba(255, 255, 255, 0.3);
+  background: linear-gradient( 180deg,#4e60a7,#9baece 14%,rgba(226,242,252,.73) 33%,rgba(231,239,252,.71));
+}
+
+.home-assets-amount {
+  font-size: 32px;
+  color: #fff;
+  .amount-icon{
+    display: inline-block;
+    width: 55px;
+    height: 48px;
+    background: url("../../img/icon/home-assets-amount-icon.png");
+    background-size: cover;
+  }
+}
+
+.home-info-pc {
+  .h-info-item {
+    margin: 0 12px;
+    height: 48px;
+    background: #fffdfa;
+    border-radius: 24px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon-img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+.home__assets-price-card {
+  background-color: white;
+  box-shadow: rgba(10, 20, 111, 0.05) 0px 10px 20px 0px, rgba(255, 255, 255, 0.3) 1px 1px 1px 0px;
+
+
+  .card__item-key {
+    font-size: 12px
+  }
+  .card__item-value {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .card__item-value.new-item-value.numbers {
+    span {
+      background-color: #000;
+      color: #fff;
+      border-radius: 4px;
+      //font-size: 16px;
+      display: inline-block;
+      text-align: center;
+      padding-right: 1px;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 16px;
+    }
+  }
+}
+
+.home-input__wrap {
+  .input-wrap {
+    background-color: #fff;
+    header {
+      height: 60px;
+      border-radius: 8px 8px 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+
+    }
+    .board.header-img {
+      background-color: #04c19e;
+    }
+    .liuq.header-img{
+      background-color: #ffa62d;
+    }
+  }
+
+}
+
+.home-input__current {
+  .current {
+    width: 538px;
+    height: 154px;
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, .06);
+    border-radius: 8px;
+    padding: 30px;
+
+    background: url("../../img/bg/curent1.png");
+  }
+  .current2 {
+    background: url("../../img/bg/curent2.png");
+  }
+}
+
+.home-count__wrap {
+  background: #fff;
+  .count-wrap {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 70px;
+    border-bottom: 1px solid #dee0ed;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

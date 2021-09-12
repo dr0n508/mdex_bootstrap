@@ -28,19 +28,9 @@
 $enable-gradients: true;
 $enable-shadows: true;
 
-// Customize some defaults
-//$body-color: #333;
-//$body-bg: #fff;
-//$border-radius: .4rem;
-$success: #02c09f;
 
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1200px,
-  //xxl: 1320px
-) !default;
+//changes to bootsrap4
+@import "variables";
 
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
@@ -91,6 +81,7 @@ $container-max-widths: (
 }
 @import "fonts";
 @import "vars";
+@import "homepage";
 @import "header";
 @import "dropd";
 @import "footer";
