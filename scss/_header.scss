@@ -1,0 +1,168 @@
+.main-header {
+  .navbar-nav {
+    width: 100%;
+  }
+  .burger-btn {
+    border: none;
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+  }
+  .navbar-brand {
+    max-width: 150px;
+
+    &:hover {
+      transform: rotate(-5deg);
+    }
+  }
+  .btn-heco,
+  .btn-connect-wallet {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .btn-connect-wallet {
+    text-align: left;
+  }
+  .lang_bar {
+    img {
+      width: 36px;
+      height: 36px;
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    .nav-item {
+      .nav-link {
+        font-size: 14px;
+      }
+    }
+    .btn-heco,
+    .btn-connect-wallet {
+      font-size: 14px;
+    }
+    .navbar-brand {
+      max-width: 120px;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .navbar-nav {
+      width: auto;
+      margin-left: auto;
+    }
+    .desktop-item {
+      display: none !important;
+    }
+    .config-btn {
+      img {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.w-bage {
+  img {
+    position: relative;
+    width: 30px;
+    height: 15px;
+    top: -6px;
+    left: 2px;
+  }
+}
+
+////mobile header
+
+.modal {
+
+  .modal-header {
+    border-bottom: none;
+  }
+
+  .modal-body {
+
+    .select-language {
+      margin-bottom: 30px;
+      .select-info {
+        width: 33.33%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 14px;
+        color: #48587b;
+        font-weight: 500;
+
+        border: 1px solid #dce3ec;
+      }
+      .select-info.active {
+        background: #2c72f4;
+        color: #fff;
+        border: none;
+      }
+    }
+
+    .social-list-nav {
+      li {
+        width: 50%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        a {
+          //font-size: 14px;
+          color: #48587b;
+          font-weight: 500;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+        }
+      }
+
+    }
+    .aff-emai {
+      font-size: 14px;
+      font-weight: 500;
+      color: #9aa2b7;
+    }
+  }
+}
+
+
+.lang-bar-button {
+  padding: .5rem 0;
+}
+
+.lang-bar-dropdown.dropdown-menu {
+  min-width: 10rem;
+  top: 100%;
+  right: 0;
+  .dropdown-item  {
+    img {
+      width: 16px;
+      height: 16px;
+      margin-right: 7px;
+    }
+  }
+}
+
+.btn-rounded {
+  border-radius: 10rem;
+}

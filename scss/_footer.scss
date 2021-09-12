@@ -1,0 +1,150 @@
+.footer-desktop {
+  background-color: #101523;
+  padding: 50px 0 10px;
+  .logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+    img {
+      height: 49px;
+      width: 49px;
+    }
+  }
+  .social-list-footer {
+    li {
+      display: inline-block;
+      a {
+        display: inline-block;
+        margin-right: 15px;
+        img {
+          height: 20px;
+          width: 22px;
+
+          filter: grayscale(100%);
+          opacity: .5;
+        }
+        &:hover img {
+          filter: grayscale(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .copyright-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6d7278;
+  }
+  .footer-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 28px;
+  }
+  .text-link {
+    li {
+      a {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: #a8a8a8;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+
+.footer-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 -3px 5px 0 rgba(135,132,132,.05);
+  background-color: white;
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .title-link {
+      font-size: 12px;
+      color: #8890a1;
+      font-weight: 500;
+    }
+    .badge {
+      position: absolute;
+      right: -10px;
+      top: 6px;
+      font-size: 60%;
+      font-weight: 500;
+      border-radius: .4rem .4rem .4rem 0;
+
+    }
+    .icon-home {
+      background: url("../../img/icon/footer/home-icon.png");
+    }
+    .icon-swap {
+      background: url("../../img/icon/footer/swap-icon.png");
+    }
+    .icon-farm {
+      background: url("../../img/icon/footer/farm-icon.png");
+    }
+    .icon-charts {
+      background: url("../../img/icon/footer/charts-icon.png");
+    }
+    .icon-boardroom {
+      background: url("../../img/icon/footer/boardroom.png");
+    }
+    .icon {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      margin: 0 auto 3px;
+      background-size: 24px;
+    }
+  }
+  .nav-link.active .title-link{
+    color: #2c72f4;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .footer-desktop {
+    display: block;
+  }
+  .footer-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer-desktop {
+    display: none;
+  }
+  .footer-mobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-mobile {
+
+    .nav-link {
+      .title-link {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .footer-mobile {
+    .nav-link {
+      padding: .5rem .5rem;
+    }
+  }
+}
