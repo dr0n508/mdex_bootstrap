@@ -11,6 +11,18 @@ $carousel-control-prev-icon-bg: url("../../img/icon/home-page/slider/slider-arro
 $carousel-control-next-icon-bg: url("../../img/icon/home-page/slider/slider-arrow-right.png");
 $carousel-control-icon-width: 16px;
 
+$navbar-dark-active-color: $success;
+$navbar-dark-color: rgba(255, 255, 255, .95) !default;
+$navbar-dark-hover-color: $success !default;
+
+$dropdown-link-color: #626e88;
+$dropdown-link-active-color: #041843 !default;
+$dropdown-link-active-bg: transparent;
+$dropdown-font-size: .875em !default;
+$dropdown-border-radius: 8px !default;
+
+
+
 $container-max-widths: (
   sm: 100%,
   md: 100%,

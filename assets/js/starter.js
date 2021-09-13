@@ -10,7 +10,7 @@
 
 import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
-
+import { CountUp } from '../../assets/js/countUp.min.js';
 // Option 2
 //
 // Import just what we need
@@ -59,6 +59,19 @@ $(document).ready(function() {
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
+
+
+  //countUp
+  const options = {
+    startVal: 2712413369.62,
+    decimalPlaces: 2,
+  };
+  let demo = new CountUp('countElement', 2712913369.62, options);
+  if (!demo.error) {
+    demo.start();
+  } else {
+    console.error(demo.error);
+  }
 
 
 });

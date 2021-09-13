@@ -79,7 +79,7 @@
             </div>
           </li>
 
-          <a href="#" class="config-btn btn btn-light navbar-toggler" data-toggle="modal" data-target="#modalLang">
+          <a href="#" class="config-btn btn btn-light" data-toggle="modal" data-target="#modalLang">
             <img src="img/icon/header/config-button-icon.png" alt="">
           </a>
         </ul>
@@ -259,7 +259,7 @@
         <div class="home-assets-amount d-flex flex-wrap align-items-center justify-content-center">
             <span class="amount-icon order-1"></span>
             <span class="text order-2">Total Value Locked</span>
-            <span class="amount-number order-lg-3 order-md-4 order-sm-4 order-4">2,576,778,101.66</span>
+            <span id="countElement" class="amount-number order-lg-3 order-md-4 order-sm-4 order-4">2,576,778,101.66</span>
             <span class="amount-unit order-3">(USDT)</span>
         </div>
 
@@ -732,13 +732,6 @@
       </div>
     </section>
 
-
-
-
-
-
-
-
     <footer class="footer-desktop">
       <div class="container">
         <div class="row">
@@ -859,6 +852,7 @@
   </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="module" src="assets/js/countUp.min.js"></script>
     <script type="module" src="assets/js/starter.js"></script>
   </body>
 </html>

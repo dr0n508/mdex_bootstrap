@@ -19,7 +19,8 @@
   transform: translate(-100%,0);
 }
 .modal.fade.show .modal-dialog.modal-dialog-slideout {
-  -webkit-transform: translate(0,0);transform: translate(0,0);
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);
   flex-flow: column;
 }
 .modal-dialog-slideout .modal-content{
@@ -45,6 +46,7 @@
             margin-top: 10px;
             margin-bottom: 0;
             line-height: 1;
+            color: black;
           }
           img {
             width: 36px;
@@ -66,6 +68,7 @@
             display: flex;
             align-items: center;
             width: 100%;
+            color: black;
           }
           img {
             width: 24px;

@@ -1,11 +1,20 @@
 .main-header {
   position: absolute;
   z-index: 5;
+  border-bottom: 1px solid hsla(0,0%,100%,.3);
   .navbar-nav {
     width: 100%;
+    .nav-item {
+      .nav-link {
+        font-weight: 500;
+      }
+    }
   }
   .burger-btn {
     border: none;
+    padding-left: 0;
+    padding-right: 0;
+
     img {
       width: 24px;
       height: 24px;
@@ -21,17 +30,18 @@
   }
   .btn-heco,
   .btn-connect-wallet {
-    display: flex;
-    align-items: center;
+    //display: flex;
+    //align-items: center;
     height: 45px;
     padding-top: 0;
     padding-bottom: 0;
     font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1;
+    //font-size: 16px;
+    line-height: 45px;
   }
   .btn-connect-wallet {
     text-align: left;
+    line-height: 1;
   }
   .lang_bar {
     img {
@@ -53,6 +63,9 @@
       max-width: 120px;
     }
   }
+  .config-btn {
+    display: none;
+  }
   @media only screen and (max-width: 1200px) {
     .navbar-nav {
       width: auto;
@@ -62,10 +75,37 @@
       display: none !important;
     }
     .config-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+      height: 45px;
+      width: 45px;
+      padding: 0;
       img {
         width: 17px;
         height: 17px;
       }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .btn-heco {
+      padding-right: 6px;
+      padding-left: 6px;
+      height: 28px;
+      line-height: 28px;
+      color: #041843;
+      background: #f8f9fa linear-gradient(180deg, #f9fafb, #f8f9fa) repeat-x;
+      border-color: #f8f9fa;
+      border-radius: 4px;
+      &:hover {
+        background: #e2e6ea linear-gradient(180deg, #e6eaed, #e2e6ea) repeat-x;
+        border-color: #dae0e5;
+      }
+    }
+    .config-btn {
+      height: 28px;
+      width: 28px;
     }
   }
 }
@@ -108,15 +148,19 @@
         line-height: 50px;
         text-align: center;
         font-size: 14px;
-        color: #48587b;
+        //color: #48587b;
         font-weight: 500;
-
         border: 1px solid #dce3ec;
+        a {
+          color: #48587b;
+        }
       }
       .select-info.active {
         background: #2c72f4;
-        color: #fff;
         border: none;
+        a {
+          color: #fff;
+        }
       }
     }
 
