@@ -9,7 +9,57 @@
   background: rgb(255, 255, 255);
   border-radius: 10px;
   margin: -80px auto 20px;
+
+
+  .dataTable {
+    .is-right {
+      text-align: right;
+    }
+    .is-center {
+      text-align: center;
+    }
+    .el-table_1_column_1 {
+      .cell {
+        font-weight: 600;
+      }
+    }
+    .el-table_1_column_5 {
+      color: $success;
+    }
+  }
+
+
+
+  .cell {
+    font-weight: 500;
+    .Trades-one {
+      img {
+        height: 30px;
+        margin-left: 15px;
+      }
+    }
+  }
+  .apy-class {
+    display: flex;
+  }
+
+  .topic {
+    img {
+      width: 16px;
+      height: 16px;
+      margin-left: 5px;
+    }
+  }
 }
 
-.wrapper-control {
+
+//fix dataTable slyles
+
+table.dataTable thead th, table.dataTable thead td,
+table.dataTable.no-footer {
+  border-bottom: #eee;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+  padding: 25px 10px;
 }

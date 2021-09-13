@@ -74,4 +74,15 @@ $(document).ready(function() {
   }
 
 
+  //datatables
+
+  $('#example').DataTable( {
+    "paging":   false,
+    "info":     false,
+    "dom": '<"toolbar">frtip'
+  } );
+
+  $("div.toolbar").html('<b>Custom tool bar! Text/images etc.</b>');
+
+
 });
