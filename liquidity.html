@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/starter.css">
+    <title>Bootstrap npm starter</title>
+  </head>
+  <body class="liquidity-page">
+
+    <header class="main-header w-100">
+
+      <nav class="navbar justify-content-start navbar-dark navbar-expand-xl">
+
+        <a href="#" class="burger-btn navbar-toggler" data-toggle="modal" data-target="#slidePanel">
+          <img src="img/icon/header/burger-icon.png" alt="">
+        </a>
+
+        <a class="navbar-brand" href="#">
+          <img src="img/main-logo.png">
+        </a>
+
+        <ul class="navbar-nav flex-row justify-content-between align-items-center">
+          <li class="nav-item active desktop-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item desktop-item">
+            <a class="nav-link" href="#">Swap</a>
+          </li>
+          <li class="nav-item desktop-item">
+            <a class="nav-link" href="#">Pool</a>
+          </li>
+          <li class="nav-item desktop-item">
+            <a class="nav-link" href="#">Liquidity</a>
+          </li>
+          <li class="nav-item desktop-item">
+            <a class="nav-link" href="#">Trading</a>
+          </li>
+          <li class="nav-item desktop-item">
+            <a class="nav-link" href="#">Boardroom</a>
+          </li>
+          <li class="nav-item desktop-item">
+            <a class="nav-link" href="#">Bridge</a>
+          </li>
+          <li class="nav-item desktop-item w-bage">
+            <a class="nav-link" href="#">Charts <img src="img/beta-badge.png" alt=""></a>
+          </li>
+          <li class="nav-item desktop-item">
+            <a class="nav-link" href="#">Burning black hole</a>
+          </li>
+          <li class="nav-item desktop-item">
+            <a class="nav-link" href="#">DAO</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="btn btn-success btn-rounded btn-heco dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              HECO
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">ETH</a>
+              <a class="dropdown-item" href="#">BSC</a>
+              <a class="dropdown-item active" href="#">HECO</a>
+            </div>
+          </li>
+
+          <li class="nav-item desktop-item">
+            <button type="button" class="btn btn-light btn-rounded btn-connect-wallet">Connect your wallet</button>
+          </li>
+
+          <li class="nav-item lang_bar desktop-item d-flex align-items-center flex-shrink-0 dropdown dropleft">
+            <a class="lang-bar-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="img/btn-dropdown-dots.png" alt="">
+            </a>
+
+            <div class="lang-bar-dropdown dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#"><img src="img/news-icon.png" alt="">News</a>
+              <a class="dropdown-item" href="#"><img src="img/info-icon.png" alt="">Info</a>
+              <a class="dropdown-item" href="#"><img src="img/language-icon.png" alt="">Language</a>
+            </div>
+          </li>
+
+          <a href="#" class="config-btn btn btn-light" data-toggle="modal" data-target="#modalLang">
+            <img src="img/icon/header/config-button-icon.png" alt="">
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Slide-out-panel -->
+    <div class="slide-out-panel modal fade" id="slidePanel" tabindex="-1" role="dialog" aria-labelledby="slidePanelLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-slideout modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="header d-flex justify-content-around">
+              <div class="item">
+                <a href="#" target="_blank">
+                  <img src="img/icon/header/slide-out-panel/referral-system-icon.png" alt="">
+                  <p>Referral System</p>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" target="_blank">
+                  <img src="img/icon/header/slide-out-panel/bridge-icon.png" alt="">
+                  <p>Bridge</p>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" target="_blank">
+                  <img src="img/icon/header/slide-out-panel/repurchase-burn-icon.png" alt="">
+                  <p>Repurchase &amp; Burn</p>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" target="_blank">
+                  <img src="img/icon/header/slide-out-panel/dao-icon.png" alt="">
+                  <p>DAO</p>
+                </a>
+              </div>
+            </div>
+
+            <ul class="content">
+              <li class="item">
+                <a href="#">
+                  <img src="img/icon/header/slide-out-panel/main/faq-aside-icon.png" alt="">
+                  <span>FAQ</span>
+                </a>
+              </li>
+
+              <li class="item">
+                <a href="#">
+                  <img src="img/icon/header/slide-out-panel/main/info-aside-icon.png" alt="">
+                  <span>Info</span>
+                </a>
+              </li>
+
+              <li class="item">
+                <a href="#">
+                  <img src="img/icon/header/slide-out-panel/main/listing-token-aside-icon.png" alt="">
+                  <span>Listing Token</span>
+                </a>
+              </li>
+
+              <li class="item">
+                <a href="#">
+                  <img src="img/icon/header/slide-out-panel/main/bug-bounty-aside-icon.png" alt="">
+                  <span>Bug Bounty Campaign</span>
+                </a>
+              </li>
+
+              <li class="item">
+                <a href="#">
+                  <img src="img/icon/header/slide-out-panel/main/liquidity-aside-icon.png" alt="">
+                  <span>Liquidity Mining Whitelist</span>
+                </a>
+              </li>
+
+              <li class="item">
+                <a href="#">
+                  <img src="img/icon/header/slide-out-panel/main/mdex-aside-icon.png" alt="">
+                  <span>MDEX Ecological Fund Application</span>
+                </a>
+              </li>
+
+              <li class="item">
+                <a href="#">
+                  <img src="img/icon/header/slide-out-panel/main/news-aside-icon.png" alt="">
+                  <span>News</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Lang-->
+    <div class="modal fade" id="modalLang" tabindex="-1"  aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="select-language d-flex flex-wrap">
+              <div class="select-info active"><a href="#">English</a></div>
+              <div class="select-info"><a href="#">简体中文</a></div>
+              <div class="select-info"><a href="#">繁体中文</a></div>
+              <div class="select-info"><a href="#">日本語</a></div>
+              <div class="select-info"><a href="#">Türk</a></div>
+              <div class="select-info"><a href="#">한국어</a></div>
+              <div class="select-info"><a href="#">Россия</a></div>
+            </div>
+            <div class="social-list-nav">
+              <ul class="d-flex flex-wrap">
+                <li><a href="#"><img src="img/icon/header/social-modal/github-icon-modal.png" alt="">GitHub</a></li>
+                <li><a href="#"><img src="img/icon/header/social-modal/medium-icon-modal.png" alt="">Medium</a></li>
+                <li><a href="#"><img src="img/icon/header/social-modal/telegram-icon-modal.png" alt="">Telegram</a></li>
+                <li><a href="#"><img src="img/icon/header/social-modal/twitter-icon-modal.png" alt="">Twitter</a></li>
+                <li><a href="#"><img src="img/icon/header/social-modal/discord-icon-modal.png" alt="">Discord</a></li>
+              </ul>
+            </div>
+            <div class="aff-emai text-center">
+              <span> Business cooperation：business@mdex.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="banner-bar">
+      <div class="container">
+
+      </div>
+    </section>
+
+    <div class="table-section">
+      <div class="container">
+        <div class="table-wrapper">
+
+          <ul class="nav nav-tabs align-items-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                LP
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                Single
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                Innovation
+              </a>
+            </li>
+
+            <li>
+
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1">Processing</label>
+              </div>
+
+            </li>
+
+            <li>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Staked only</label>
+              </div>
+            </li>
+
+            <li>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Mdex LP & Single Token" aria-label="">
+                <div class="input-group-append">
+                  <span class="input-group-text">$</span>
+                </div>
+              </div>
+            </li>
+
+            <!--<div class="wrapper-control d-flex justify-content-end align-items-center">-->
+              <!--<div class="custom-control custom-switch">-->
+                <!--<input type="checkbox" class="custom-control-input" id="customSwitch1">-->
+                <!--<label class="custom-control-label" for="customSwitch1">Processing</label>-->
+              <!--</div>-->
+
+              <!--<div class="custom-control custom-checkbox">-->
+                <!--<input type="checkbox" class="custom-control-input" id="customCheck1">-->
+                <!--<label class="custom-control-label" for="customCheck1">Staked only</label>-->
+              <!--</div>-->
+
+              <!--<div class="input-group">-->
+                <!--<input type="text" class="form-control" placeholder="Search Mdex LP & Single Token" aria-label="">-->
+                <!--<div class="input-group-append">-->
+                  <!--<span class="input-group-text">$</span>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+              <table class="table">
+                <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="footer-desktop">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-3 d-flex flex-column">
+
+            <a href="#" class="logo-footer"><img src="img/icon/footer/mdex-footer-icon.png" alt=""></a>
+
+            <ul class="social-list-footer flex-grow-1">
+              <li>
+                <a href="#"><img src="img/icon/footer/github-icon.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/icon/footer/medium-icon.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/icon/footer/telegram-icon.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/icon/footer/twitter-icon.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/icon/footer/discord-icon.png" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/icon/footer/weibo-icon.png" alt=""></a>
+              </li>
+            </ul>
+
+            <p class="copyright-text">©2021 Mdex.com.All rights reserved</p>
+          </div>
+
+          <div class="col-3">
+            <div class="text-link">
+              <h3 class="footer-title">Application</h3>
+
+              <ul>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSem595jWpO5_A5fRj9W4-wX_3mg3ypqqNiXcC_yi-tpcbOaqA/viewform" target="_blank">Listing Token</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSem595jWpO5_A5fRj9W4-wX_3mg3ypqqNiXcC_yi-tpcbOaqA/viewform" target="_blank">Liquidity Mining Whitelist</a></li>
+                <li><a href="https://forms.gle/b6SCc4cXzn7apFhk7" target="_blank">IMO Application</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdn9wYhf_jI01nNORQXWgiyGSPKcVTP4fCq2cLYBxINd35vuw/viewform" target="_blank">MDEX Ecological Fund Application</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div  class="text-link">
+              <h3 class="footer-title">Guide</h3>
+              <ul>
+                <li><a href="https://ht.mdex.co/#/swap?lang=en" target="_blank">Swap</a></li>
+                <li><a href="https://ht.mdex.co/#/pool?lang=en" target="_blank">Pool</a></li>
+                <li><a href="https://info.mdex.co/" target="_blank">Info</a></li>
+                <li><a href="https://info.mdex.co/" target="_blank">Liquidity</a></li>
+                <li><a href="https://info.mdex.co/" target="_blank">Boardroom</a></li>
+                <li><a href="https://info.mdex.co/" target="_blank">Trading</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div  class="text-link">
+              <h3 class="footer-title">Doc</h3>
+              <ul>
+                <li><a href="https://mdexdoc.gitbook.io/doc//faq" target="_blank">FAQ</a></li>
+                <li><a href="https://mdexdoc.gitbook.io/doc/yong-hu-zhi-nan" target="_blank">User Guide</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="text-link">
+              <h3 class="footer-title">About</h3>
+              <ul>
+                <li><a href="https://mdexdoc.gitbook.io/doc/gong-gao-1" target="_blank">Announcement</a></li>
+                <li><a href="https://mdexcom.zendesk.com/hc/en-gb/sections/360012110672-Adjustment-of-Pool" target="_blank">Adjustment of Pool</a></li>
+                <li><a href="#">Ecological Fund</a></li>
+                <li><a href="#">Bug Bounty Campaign</a></li>
+                <li><a href="https://mdexdoc.gitbook.io/doc/lian-xi-wo-men" target="_blank">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <footer class="footer-mobile">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <span class="icon icon-home"></span>
+          <span class="title-link">Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span class="icon icon-swap"></span>
+          <span class="title-link">Swap</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span class="icon icon-farm"></span>
+          <span class="title-link">Farm</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span class="icon icon-charts"></span>
+          <span class="badge badge-success">Beta</span>
+          <span class="title-link">Charts</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span class="icon icon-boardroom"></span>
+          <span class="title-link">Boardroom</span>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="module" src="assets/js/countUp.min.js"></script>
+    <script type="module" src="assets/js/starter.js"></script>
+  </body>
+</html>
