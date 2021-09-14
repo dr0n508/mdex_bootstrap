@@ -164,34 +164,34 @@
       font-weight: 600;
       color: #181f36;
     }
-    .list {
-      font-weight: 500;
-      margin-bottom: 10px;
-      height: 44px;
-      border-bottom: 1px solid #e6e6e6;
-      padding: 0 13px;
-      &:hover {
-        background: #f6f7fb;
-        border-radius: 18px;
-      }
-      .start {
-
-       .bet-icon {
-
-         margin-right: 10px;
-       }
-      }
-      img {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-      }
-      .span-img {
-        display: inline-block;
-        width: 30px;
-        text-align: right;
-      }
-    }
+    //.list {
+    //  font-weight: 500;
+    //  margin-bottom: 10px;
+    //  height: 44px;
+    //  border-bottom: 1px solid #e6e6e6;
+    //  padding: 0 13px;
+    //  &:hover {
+    //    background: #f6f7fb;
+    //    border-radius: 18px;
+    //  }
+    //  .start {
+    //
+    //   .bet-icon {
+    //
+    //     margin-right: 10px;
+    //   }
+    //  }
+    //  img {
+    //    width: 20px;
+    //    height: 20px;
+    //    border-radius: 50%;
+    //  }
+    //  .span-img {
+    //    display: inline-block;
+    //    width: 30px;
+    //    text-align: right;
+    //  }
+    //}
   }
 }
 
@@ -235,6 +235,7 @@
 }
 
 
+//TODO list dropdowns
 .list {
   font-weight: 500;
   margin-bottom: 10px;
