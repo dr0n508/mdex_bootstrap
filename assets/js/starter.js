@@ -112,4 +112,12 @@ $(document).ready(function() {
   // $('table').dataTable({dom: 'lrt'});
 
 
+  //dropdown
+  // $(".selectBox").on("click", function(e) {
+
+    // $(this).toggleClass("show");
+
+  // });
+
+
 });

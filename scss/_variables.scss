@@ -21,13 +21,19 @@ $dropdown-link-active-bg: transparent;
 $dropdown-font-size: .875em !default;
 $dropdown-border-radius: 8px !default;
 
-
-//$table-cell-padding-y: 1.5rem !default;
-//$table-cell-padding-x: 1.5rem !default;
 $table-color: #041843 !default;
 $table-hover-bg: #f5f7fa !default;
 $table-border-color: #eee !default;
 $table-cell-vertical-align:  middle !default;
+
+$input-bg: #f1f3f7 !default;
+$input-font-size: 12px !default;
+$input-font-weight: 500 !default;
+$input-border-radius: 8px !default;
+$input-border-color: transparent !default;
+$input-box-shadow: none !default;
+
+$btn-border-radius: 8px !default;
 
 $container-max-widths: (
   sm: 100%,
