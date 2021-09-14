@@ -113,11 +113,11 @@ $(document).ready(function() {
 
 
   //dropdown
-  // $(".selectBox").on("click", function(e) {
+  $(".bet-info").on("click", function(e) {
 
-    // $(this).toggleClass("show");
+    $(this).find(".dropdown-menu").toggleClass("show");
 
-  // });
+  });
 
 
 });
