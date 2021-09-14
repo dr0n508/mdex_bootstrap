@@ -1,3 +1,7 @@
+.wind-mining {
+ padding-bottom: 150px;
+}
+
 .wind-mining-content {
   width: 415px;
   padding: 20px;
@@ -137,4 +141,78 @@
   }
 
 
+}
+
+
+.text-tip {
+  padding: 2px;
+  margin-bottom: 5px;
+  line-height: 17px;
+  color: #626e88;
+  img {
+    float: left;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.modal-choose-bridge {
+  .assets-body {
+    .assets-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #181f36;
+    }
+    .list {
+      font-weight: 500;
+      margin-bottom: 10px;
+      height: 44px;
+      border-bottom: 1px solid #e6e6e6;
+      padding: 0 13px;
+      &:hover {
+        background: #f6f7fb;
+        border-radius: 18px;
+      }
+      .start {
+
+       .bet-icon {
+
+         margin-right: 10px;
+       }
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+      .span-img {
+        display: inline-block;
+        width: 30px;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.quota-name {
+  margin-top: 5px;
+  padding-top: 5px;
+  height: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.quota {
+  .quota-zj {
+    font-weight: 600;
+  }
+  .quota-text {
+    display: inline-block;
+    margin-left: 2px;
+    color: #181f36;
+  }
 }
