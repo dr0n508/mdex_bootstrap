@@ -76,13 +76,40 @@ $(document).ready(function() {
 
   //datatables
 
-  $('#example').DataTable( {
-    "paging":   false,
-    "info":     false,
-    "dom": '<"toolbar">frtip'
+  // $('#example').DataTable( {
+  //   "paging":   false,
+  //   "info":     false,
+  //   "dom": '<"toolbar">frtip'
+  // } );
+
+  // $("div.toolbar").html('<b>Custom tool bar! Text/images etc.</b>');
+
+
+  var table = $('#example').DataTable(
+    {
+      "paging":   false,
+      "info":     false,
+      responsive: true
+
+    }
+  );
+
+  // #myInput is a <input type="text"> element
+  $('#myInput').on( 'keyup', function () {
+    table.search( this.value ).draw();
   } );
 
-  $("div.toolbar").html('<b>Custom tool bar! Text/images etc.</b>');
+  $(".column2_search").click(function () {
+    table.column(5)
+      .search($(this).val())
+      .draw();
+  });
+
+  $('a.buttonChange').click(function () {
+    $('button', this).toggle();
+  });
+
+  // $('table').dataTable({dom: 'lrt'});
 
 
 });

@@ -1,9 +1,3 @@
-.banner-bar {
-  height: 400px;
-  background: url("../../img/liquidity-page/banner-bg.png") 50% 50% no-repeat;
-  background-size: cover;
-}
-
 .table-wrapper {
   position: relative;
   background: rgb(255, 255, 255);
@@ -25,6 +19,14 @@
     }
     .el-table_1_column_5 {
       color: $success;
+    }
+
+
+    .el-table_1_column_7 {
+      //display: none;
+    }
+    .el-table_1_column_3 {
+      //display: none;
     }
   }
 
@@ -62,4 +64,28 @@ table.dataTable.no-footer {
 
 table.dataTable tbody th, table.dataTable tbody td {
   padding: 25px 10px;
+}
+
+.dataTables_filter {
+  //display: none;
+  //visibility: hidden;
+}
+
+
+.liquidity-mdx {
+  display: inline-block;
+  padding: 0 22px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 54px;
+  color: #fff;
+  background: linear-gradient( 270deg ,#05d2bf, #02c09f);
+  border-radius: 10px;
+  span {
+    margin-right: 5px;
+    margin-left: 5px;
+
+  }
 }

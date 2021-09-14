@@ -510,3 +510,23 @@
     height: 12px;
   }
 }
+
+
+//all pages
+.banner-bar {
+  padding: 100px 0;
+  background: url("../../img/liquidity-page/banner-bg.png") 50% 50% no-repeat;
+  background-size: cover;
+  .banner-title {
+    padding-top: 60px;
+    font-weight: 500;
+    font-size: 36px;
+  }
+  .banner-title-describe {
+    margin-top: 16px;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 28px;
+    color: hsla(0, 0%, 100%, .8);
+  }
+}
