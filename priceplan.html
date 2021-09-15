@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="assets/css/starter.css">
+  <title>Bootstrap npm starter</title>
+</head>
+<body class="bridge-page">
+
+<header class="main-header w-100">
+
+  <nav class="navbar justify-content-start navbar-dark navbar-expand-xl">
+
+    <a href="#" class="burger-btn navbar-toggler" data-toggle="modal" data-target="#slidePanel">
+      <img src="img/icon/header/burger-icon.png" alt=""> </a>
+
+    <a class="navbar-brand" href="#"> <img src="img/main-logo.png"> </a>
+
+    <ul class="navbar-nav flex-row justify-content-between align-items-center">
+      <li class="nav-item active desktop-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Swap</a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Pool</a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Liquidity</a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Trading</a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Boardroom</a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Bridge</a>
+      </li>
+      <li class="nav-item desktop-item w-bage">
+        <a class="nav-link" href="#">Charts <img src="img/beta-badge.png" alt=""></a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Burning black hole</a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">DAO</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="btn btn-success btn-rounded btn-heco dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> HECO </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">ETH</a> <a class="dropdown-item" href="#">BSC</a>
+          <a class="dropdown-item active" href="#">HECO</a>
+        </div>
+      </li>
+
+      <li class="nav-item desktop-item">
+        <button type="button" class="btn btn-light btn-rounded btn-connect-wallet">Connect your wallet</button>
+      </li>
+
+      <li class="nav-item lang_bar desktop-item d-flex align-items-center flex-shrink-0 dropdown dropleft">
+        <a class="lang-bar-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="img/btn-dropdown-dots.png" alt=""> </a>
+
+        <div class="lang-bar-dropdown dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#"><img src="img/news-icon.png" alt="">News</a>
+          <a class="dropdown-item" href="#"><img src="img/info-icon.png" alt="">Info</a>
+          <a class="dropdown-item" href="#"><img src="img/language-icon.png" alt="">Language</a>
+        </div>
+      </li>
+
+      <a href="#" class="config-btn btn btn-light" data-toggle="modal" data-target="#modalLang">
+        <img src="img/icon/header/config-button-icon.png" alt=""> </a>
+    </ul>
+  </nav>
+</header>
+
+<!-- Modal Slide-out-panel -->
+<div class="slide-out-panel modal fade" id="slidePanel" tabindex="-1" role="dialog" aria-labelledby="slidePanelLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-slideout modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="header d-flex justify-content-around">
+          <div class="item">
+            <a href="#" target="_blank"> <img src="img/icon/header/slide-out-panel/referral-system-icon.png" alt="">
+              <p>Referral System</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" target="_blank"> <img src="img/icon/header/slide-out-panel/bridge-icon.png" alt="">
+              <p>Bridge</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" target="_blank"> <img src="img/icon/header/slide-out-panel/repurchase-burn-icon.png" alt="">
+              <p>Repurchase &amp; Burn</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" target="_blank"> <img src="img/icon/header/slide-out-panel/dao-icon.png" alt="">
+              <p>DAO</p>
+            </a>
+          </div>
+        </div>
+
+        <ul class="content">
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/faq-aside-icon.png" alt=""> <span>FAQ</span>
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/info-aside-icon.png" alt=""> <span>Info</span>
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/listing-token-aside-icon.png" alt="">
+              <span>Listing Token</span> </a>
+          </li>
+
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/bug-bounty-aside-icon.png" alt="">
+              <span>Bug Bounty Campaign</span> </a>
+          </li>
+
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/liquidity-aside-icon.png" alt="">
+              <span>Liquidity Mining Whitelist</span> </a>
+          </li>
+
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/mdex-aside-icon.png" alt="">
+              <span>MDEX Ecological Fund Application</span> </a>
+          </li>
+
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/news-aside-icon.png" alt=""> <span>News</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!---->
+
+<!-- Modal Lang-->
+<div class="modal fade" id="modalLang" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <img src="img/icon/close-modal-icon.png" class="close-icon">
+              </span>
+        </button>
+
+      </div>
+      <div class="modal-body">
+        <div class="select-language d-flex flex-wrap">
+          <div class="select-info active"><a href="#">English</a></div>
+          <div class="select-info"><a href="#">简体中文</a></div>
+          <div class="select-info"><a href="#">繁体中文</a></div>
+          <div class="select-info"><a href="#">日本語</a></div>
+          <div class="select-info"><a href="#">Türk</a></div>
+          <div class="select-info"><a href="#">한국어</a></div>
+          <div class="select-info"><a href="#">Россия</a></div>
+        </div>
+        <div class="social-list-nav">
+          <ul class="d-flex flex-wrap">
+            <li><a href="#"><img src="img/icon/header/social-modal/github-icon-modal.png" alt="">GitHub</a></li>
+            <li><a href="#"><img src="img/icon/header/social-modal/medium-icon-modal.png" alt="">Medium</a></li>
+            <li><a href="#"><img src="img/icon/header/social-modal/telegram-icon-modal.png" alt="">Telegram</a></li>
+            <li><a href="#"><img src="img/icon/header/social-modal/twitter-icon-modal.png" alt="">Twitter</a></li>
+            <li><a href="#"><img src="img/icon/header/social-modal/discord-icon-modal.png" alt="">Discord</a></li>
+          </ul>
+        </div>
+        <div class="aff-emai text-center">
+          <span> Business cooperation：business@mdex.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---->
+
+<section class="banner-bar">
+  <div class="container-fluid">
+
+    <h1 class="banner-title text-center text-white">MDEX Bug Bounty Campaign</h1>
+
+    <h2 class="banner-title-describe text-center">Defend the security of MDEX users' assets and transactions</h2>
+
+
+
+
+  </div>
+</section>
+
+
+<section class="introduce-section">
+  <div class="container-fluid">
+    <div class="inner-wrapper">
+
+
+      <section class="banner">
+        <div class="plantitle">
+          <a class="btn btn-success btn-rounded" href="mailto:developer@mdex.com"><span>Submit  Report</span></a>
+        </div>
+      </section>
+
+      <section class="plan-section">
+        <h1>Bug Bounty Campaign</h1>
+
+        <h2>Overview</h2>
+
+        <p>Since its listing on January 6 2021, MDEX has been in smooth and stable operation. With the gradual improvement of MDEX's functions, it can now support not only HECO, but also BSC and ETH. In future, MDEX will include more fundamental assets in our ecology.<br> To foster the sound growth of MDEX ecology and protect asset security, MDEX is now launching a bug bounty campaign. We hope that through this event, more professionals in the security research will participate in constructing a safe MDEX ecology, and defend the asset and transaction security of MDEX users in conjoint with us .</p>
+
+        <h1>Scope of application</h1>
+
+        <p>This Campaign only applies to the bugs in the following MDEX contracts</p>
+        <p>MDEX Core contracts</p>
+
+          <ul>
+            <li>
+              <a href="https://hecoinfo.com/address/0x25D2e80cB6B86881Fd7e07dd263Fb79f4AbE033c#code" target="_blank"> MdxToken(heco)</a>
+            </li>
+            <li>
+              <a href="https://bscscan.com/address/0x9C65AB58d8d978DB963e63f2bfB7121627e3a739#code" target="_blank">MdxToken(bsc)</a>
+            </li>
+            <li>
+              <a href="https://hecoinfo.com/address/0xFB03e11D93632D97a8981158A632Dd5986F5E909#code" target="_blank"> Mdx HecoPool (heco)</a>
+            </li>
+            <li>
+              <a href="https://bscscan.com/address/0xc48FE252Aa631017dF253578B1405ea399728A50#code" target="_blank">Mdx BSCPool (bsc)</a>
+            </li>
+            <li>
+              <a href="https://hecoinfo.com/address/0x7373c42502874C88954bDd6D50b53061F018422e#code" target="_blank"> Mdx SwapMining(heco)</a>
+            </li>
+            <li>
+              <a href="https://bscscan.com/address/0x782395303692aBeD877d2737Aa7982345eB44c11#code" target="_blank">Mdx SwapMining(bsc)</a>
+            </li>
+          </ul>
+
+          <p>MDEX External Contracts</p>
+
+          <ul>
+            <li>
+              <a href="https://hecoinfo.com/address/0x46900C0c18ace98bAAB81561B9906Dc93287910C#code" target="_blank"> Repurchase(heco)</a>
+            </li>
+            <li>
+              <a href="https://bscscan.com/address/0x1308AF6853B449d7604C7544cb2170248527110F#code" target="_blank">Repurchase(bsc)</a>
+            </li>
+            <li>
+              <a href="https://bscscan.com/address/0x5FEF5CC8AE1E42c5299AAe05a2EFfA1634BA5E77#code" target="_blank">Burning (bsc) </a>
+            </li>
+          </ul>
+
+          <p>The following situations are out of the scope of this Bug Bounty Campaign:</p>
+
+          <ul>
+            <li>Bugs in any third-party contracts or platforms interacting with MDEX;</li>
+            <li>Bugs that have already been reported or discovered in third parties’ contracts built on MDEX;</li>
+            <li> Bugs caused by the following activities: front-end errors, DDOS attacks, automated tools, damage or abuse of third-party systems or services.</li>
+          </ul>
+
+        <h2>Reward Plan</h2>
+
+        <p>The severity of those bugs will be calculated using the Common Vulnerability Scoring System (CVSS):</p>
+
+        <table class="table table-bordered text-center" cellspacing="0" cellpadding="0">
+            <tr>
+              <th>Rating</th>
+              <th>MDEX reward</th>
+            </tr>
+            <tr>
+              <td>Critical(9.0-10.0)</td>
+              <td class="numbers">$60000 MDX</td>
+            </tr>
+            <tr>
+              <td>High (7.0-8.9)</td>
+              <td>$50000 MDX</td>
+            </tr>
+            <tr>
+              <td>Medium(4.0-6.9)</td>
+              <td>$10000 MDX</td>
+            </tr>
+            <tr>
+              <td>Low(0.1-3.9)</td>
+              <td>$6000 MDX</td>
+            </tr>
+          </table>
+
+        <p> &nbsp;In addition to severity, rewards will also be weighed against the impact of bugs found and the difficulty level of finding them. </p>
+
+        <h2>Review and reward timeline</h2>
+
+        <p>For valid bug reports that have passed the preliminary review, we will reply by email within 15 days;<br>And for valid bug reports, we will determine the vulnerability rating and offer corresponding rewards within 15 days after replying to the email;<br>All rewards will be issued in the form of MDX tokens.<br>Credible audit institutions CertiK and Fairyproof will evaluate the valid bug reports submitted.</p>
+
+        <h2>How to submit your report</h2>
+
+        <p>&nbsp;Any bugs or defects found must only be reported to the following email:
+          <a place="action" href="mailto:developer@mdex.com" target="_blank">developer@mdex.com</a>；Prior to the disclosure to the above e-mail, no disclosure to any other person, entity or e-mail address is allowed.
+        </p>
+
+        <p>Please include as much bug-related information as possible, including but not limited to:</p>
+
+        <ul>
+          <li>The definite conditions for recurrence of the bug.</li>
+          <li>The steps needed to reproduce the bug.</li>
+          <li>The potential impact if the bug is exploited.</li>
+          <li>Detailed bug reports and analysis will not only increase the possibility of getting rewards but also the possibility of getting higher rewards.</li>
+        </ul>
+
+        <h1>Terms and Conditions</h1>
+
+        <p>To earn the rewards, you must:<br>Discover a never-reported and never-published bug or bugs, which could lead to the possible loss or lock-up of assets on MDEX (but not on any third-party platform that interacts with MDEX) and is within the scope of this Campaign.<br>The bugs should be firstly and only disclosed to MDEX.<br>Provide enough details to enable our engineers to fix the bugs.<br>Do not engage yourself in any illegal practices (e.g., blackmailing, threatening, etc) when reporting bugs to MDEX.<br>Do not exploit the bugs in any way, including disclosing to the public or making profit (except for earning rewards from this Campaign).<br>Act in good faith and do not perform any privacy invasion, data damage, interruption or degradation of MDEX service.<br>Only one bug should be submitted each time, unless you need to link the bug to other ones to showcae the impact.<br>Bugs caused by the same (potential) issues that have been submitted under this campaign will not be accepted<br>Participants should not be our current or former employees or suppliers, nor employees of any of these suppliers.<br>Satisfy all eligibility requirements of the Campaign.</p>
+
+        <h1>Security Consultant</h1>
+
+        <p>We are very honored to have CertiK and Fairyproof audit firms as the security consultant for MDEX’s Bug Bounty Campaign! It will provide professional advice and guidance!<br>All bug reports reviewed by MDEX will be double reviewed by the security consultant.</p>
+
+        <h1>Other terms</h1>
+
+        <p>All reward decisions, including the eligibility, amount of award and the method of payment, are up to the discretion of MDEX team.<br>The terms and conditions of this Campaign may change as per realities realities from time to time.</p>
+      </section>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer class="footer-desktop">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-3 d-flex flex-column">
+
+        <a href="#" class="logo-footer"><img src="img/icon/footer/mdex-footer-icon.png" alt=""></a>
+
+        <ul class="social-list-footer flex-grow-1">
+          <li>
+            <a href="#"><img src="img/icon/footer/github-icon.png" alt=""></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/footer/medium-icon.png" alt=""></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/footer/telegram-icon.png" alt=""></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/footer/twitter-icon.png" alt=""></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/footer/discord-icon.png" alt=""></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/footer/weibo-icon.png" alt=""></a>
+          </li>
+        </ul>
+
+        <p class="copyright-text">©2021 Mdex.com.All rights reserved</p>
+      </div>
+
+      <div class="col-3">
+        <div class="text-link">
+          <h3 class="footer-title">Application</h3>
+
+          <ul>
+            <li>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSem595jWpO5_A5fRj9W4-wX_3mg3ypqqNiXcC_yi-tpcbOaqA/viewform" target="_blank">Listing Token</a>
+            </li>
+            <li>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSem595jWpO5_A5fRj9W4-wX_3mg3ypqqNiXcC_yi-tpcbOaqA/viewform" target="_blank">Liquidity Mining Whitelist</a>
+            </li>
+            <li><a href="https://forms.gle/b6SCc4cXzn7apFhk7" target="_blank">IMO Application</a></li>
+            <li>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdn9wYhf_jI01nNORQXWgiyGSPKcVTP4fCq2cLYBxINd35vuw/viewform" target="_blank">MDEX Ecological Fund Application</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="text-link">
+          <h3 class="footer-title">Guide</h3>
+          <ul>
+            <li><a href="https://ht.mdex.co/#/swap?lang=en" target="_blank">Swap</a></li>
+            <li><a href="https://ht.mdex.co/#/pool?lang=en" target="_blank">Pool</a></li>
+            <li><a href="https://info.mdex.co/" target="_blank">Info</a></li>
+            <li><a href="https://info.mdex.co/" target="_blank">Liquidity</a></li>
+            <li><a href="https://info.mdex.co/" target="_blank">Boardroom</a></li>
+            <li><a href="https://info.mdex.co/" target="_blank">Trading</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="text-link">
+          <h3 class="footer-title">Doc</h3>
+          <ul>
+            <li><a href="https://mdexdoc.gitbook.io/doc//faq" target="_blank">FAQ</a></li>
+            <li><a href="https://mdexdoc.gitbook.io/doc/yong-hu-zhi-nan" target="_blank">User Guide</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="text-link">
+          <h3 class="footer-title">About</h3>
+          <ul>
+            <li><a href="https://mdexdoc.gitbook.io/doc/gong-gao-1" target="_blank">Announcement</a></li>
+            <li>
+              <a href="https://mdexcom.zendesk.com/hc/en-gb/sections/360012110672-Adjustment-of-Pool" target="_blank">Adjustment of Pool</a>
+            </li>
+            <li><a href="#">Ecological Fund</a></li>
+            <li><a href="#">Bug Bounty Campaign</a></li>
+            <li><a href="https://mdexdoc.gitbook.io/doc/lian-xi-wo-men" target="_blank">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<footer class="footer-mobile">
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" href="#"> <span class="icon icon-home"></span> <span class="title-link">Home</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"> <span class="icon icon-swap"></span> <span class="title-link">Swap</span> </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"> <span class="icon icon-farm"></span> <span class="title-link">Farm</span> </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"> <span class="icon icon-charts"></span> <span class="badge badge-success">Beta</span>
+        <span class="title-link">Charts</span> </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"> <span class="icon icon-boardroom"></span> <span class="title-link">Boardroom</span>
+      </a>
+    </li>
+  </ul>
+</footer>
+
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
+<script type="module" src="assets/js/countUp.min.js"></script>
+<script type="module" src="assets/js/starter.js"></script>
+</body>
+</html>
