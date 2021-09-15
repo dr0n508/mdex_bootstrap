@@ -1,597 +1,583 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="assets/css/starter.css">
-    <title>Bootstrap npm starter</title>
-  </head>
-  <body class="bridge-page">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="assets/css/starter.css">
+  <title>Bootstrap npm starter</title>
+</head>
+<body class="bridge-page">
 
-    <header class="main-header w-100">
+<header class="main-header w-100">
 
-      <nav class="navbar justify-content-start navbar-dark navbar-expand-xl">
+  <nav class="navbar justify-content-start navbar-dark navbar-expand-xl">
 
-        <a href="#" class="burger-btn navbar-toggler" data-toggle="modal" data-target="#slidePanel">
-          <img src="img/icon/header/burger-icon.png" alt="">
-        </a>
+    <a href="#" class="burger-btn navbar-toggler" data-toggle="modal" data-target="#slidePanel">
+      <img src="img/icon/header/burger-icon.png" alt=""> </a>
 
-        <a class="navbar-brand" href="#">
-          <img src="img/main-logo.png">
-        </a>
+    <a class="navbar-brand" href="#"> <img src="img/main-logo.png"> </a>
 
-        <ul class="navbar-nav flex-row justify-content-between align-items-center">
-          <li class="nav-item active desktop-item">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item desktop-item">
-            <a class="nav-link" href="#">Swap</a>
-          </li>
-          <li class="nav-item desktop-item">
-            <a class="nav-link" href="#">Pool</a>
-          </li>
-          <li class="nav-item desktop-item">
-            <a class="nav-link" href="#">Liquidity</a>
-          </li>
-          <li class="nav-item desktop-item">
-            <a class="nav-link" href="#">Trading</a>
-          </li>
-          <li class="nav-item desktop-item">
-            <a class="nav-link" href="#">Boardroom</a>
-          </li>
-          <li class="nav-item desktop-item">
-            <a class="nav-link" href="#">Bridge</a>
-          </li>
-          <li class="nav-item desktop-item w-bage">
-            <a class="nav-link" href="#">Charts <img src="img/beta-badge.png" alt=""></a>
-          </li>
-          <li class="nav-item desktop-item">
-            <a class="nav-link" href="#">Burning black hole</a>
-          </li>
-          <li class="nav-item desktop-item">
-            <a class="nav-link" href="#">DAO</a>
-          </li>
+    <ul class="navbar-nav flex-row justify-content-between align-items-center">
+      <li class="nav-item active desktop-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Swap</a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Pool</a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Liquidity</a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Trading</a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Boardroom</a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Bridge</a>
+      </li>
+      <li class="nav-item desktop-item w-bage">
+        <a class="nav-link" href="#">Charts <img src="img/beta-badge.png" alt=""></a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">Burning black hole</a>
+      </li>
+      <li class="nav-item desktop-item">
+        <a class="nav-link" href="#">DAO</a>
+      </li>
 
-          <li class="nav-item dropdown">
-            <a class="btn btn-success btn-rounded btn-heco dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              HECO
+      <li class="nav-item dropdown">
+        <a class="btn btn-success btn-rounded btn-heco dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> HECO </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">ETH</a> <a class="dropdown-item" href="#">BSC</a>
+          <a class="dropdown-item active" href="#">HECO</a>
+        </div>
+      </li>
+
+      <li class="nav-item desktop-item">
+        <button type="button" class="btn btn-light btn-rounded btn-connect-wallet">Connect your wallet</button>
+      </li>
+
+      <li class="nav-item lang_bar desktop-item d-flex align-items-center flex-shrink-0 dropdown dropleft">
+        <a class="lang-bar-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="img/btn-dropdown-dots.png" alt=""> </a>
+
+        <div class="lang-bar-dropdown dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#"><img src="img/news-icon.png" alt="">News</a>
+          <a class="dropdown-item" href="#"><img src="img/info-icon.png" alt="">Info</a>
+          <a class="dropdown-item" href="#"><img src="img/language-icon.png" alt="">Language</a>
+        </div>
+      </li>
+
+      <a href="#" class="config-btn btn btn-light" data-toggle="modal" data-target="#modalLang">
+        <img src="img/icon/header/config-button-icon.png" alt=""> </a>
+    </ul>
+  </nav>
+</header>
+
+<!-- Modal Slide-out-panel -->
+<div class="slide-out-panel modal fade" id="slidePanel" tabindex="-1" role="dialog" aria-labelledby="slidePanelLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-slideout modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="header d-flex justify-content-around">
+          <div class="item">
+            <a href="#" target="_blank"> <img src="img/icon/header/slide-out-panel/referral-system-icon.png" alt="">
+              <p>Referral System</p>
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">ETH</a>
-              <a class="dropdown-item" href="#">BSC</a>
-              <a class="dropdown-item active" href="#">HECO</a>
-            </div>
-          </li>
-
-          <li class="nav-item desktop-item">
-            <button type="button" class="btn btn-light btn-rounded btn-connect-wallet">Connect your wallet</button>
-          </li>
-
-          <li class="nav-item lang_bar desktop-item d-flex align-items-center flex-shrink-0 dropdown dropleft">
-            <a class="lang-bar-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="img/btn-dropdown-dots.png" alt="">
+          </div>
+          <div class="item">
+            <a href="#" target="_blank"> <img src="img/icon/header/slide-out-panel/bridge-icon.png" alt="">
+              <p>Bridge</p>
             </a>
+          </div>
+          <div class="item">
+            <a href="#" target="_blank"> <img src="img/icon/header/slide-out-panel/repurchase-burn-icon.png" alt="">
+              <p>Repurchase &amp; Burn</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" target="_blank"> <img src="img/icon/header/slide-out-panel/dao-icon.png" alt="">
+              <p>DAO</p>
+            </a>
+          </div>
+        </div>
 
-            <div class="lang-bar-dropdown dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#"><img src="img/news-icon.png" alt="">News</a>
-              <a class="dropdown-item" href="#"><img src="img/info-icon.png" alt="">Info</a>
-              <a class="dropdown-item" href="#"><img src="img/language-icon.png" alt="">Language</a>
-            </div>
+        <ul class="content">
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/faq-aside-icon.png" alt=""> <span>FAQ</span>
+            </a>
           </li>
 
-          <a href="#" class="config-btn btn btn-light" data-toggle="modal" data-target="#modalLang">
-            <img src="img/icon/header/config-button-icon.png" alt="">
-          </a>
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/info-aside-icon.png" alt=""> <span>Info</span>
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/listing-token-aside-icon.png" alt="">
+              <span>Listing Token</span> </a>
+          </li>
+
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/bug-bounty-aside-icon.png" alt="">
+              <span>Bug Bounty Campaign</span> </a>
+          </li>
+
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/liquidity-aside-icon.png" alt="">
+              <span>Liquidity Mining Whitelist</span> </a>
+          </li>
+
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/mdex-aside-icon.png" alt="">
+              <span>MDEX Ecological Fund Application</span> </a>
+          </li>
+
+          <li class="item">
+            <a href="#"> <img src="img/icon/header/slide-out-panel/main/news-aside-icon.png" alt=""> <span>News</span>
+            </a>
+          </li>
         </ul>
-      </nav>
-    </header>
-
-    <!-- Modal Slide-out-panel -->
-    <div class="slide-out-panel modal fade" id="slidePanel" tabindex="-1" role="dialog" aria-labelledby="slidePanelLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-slideout modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="header d-flex justify-content-around">
-              <div class="item">
-                <a href="#" target="_blank">
-                  <img src="img/icon/header/slide-out-panel/referral-system-icon.png" alt="">
-                  <p>Referral System</p>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#" target="_blank">
-                  <img src="img/icon/header/slide-out-panel/bridge-icon.png" alt="">
-                  <p>Bridge</p>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#" target="_blank">
-                  <img src="img/icon/header/slide-out-panel/repurchase-burn-icon.png" alt="">
-                  <p>Repurchase &amp; Burn</p>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#" target="_blank">
-                  <img src="img/icon/header/slide-out-panel/dao-icon.png" alt="">
-                  <p>DAO</p>
-                </a>
-              </div>
-            </div>
-
-            <ul class="content">
-              <li class="item">
-                <a href="#">
-                  <img src="img/icon/header/slide-out-panel/main/faq-aside-icon.png" alt="">
-                  <span>FAQ</span>
-                </a>
-              </li>
-
-              <li class="item">
-                <a href="#">
-                  <img src="img/icon/header/slide-out-panel/main/info-aside-icon.png" alt="">
-                  <span>Info</span>
-                </a>
-              </li>
-
-              <li class="item">
-                <a href="#">
-                  <img src="img/icon/header/slide-out-panel/main/listing-token-aside-icon.png" alt="">
-                  <span>Listing Token</span>
-                </a>
-              </li>
-
-              <li class="item">
-                <a href="#">
-                  <img src="img/icon/header/slide-out-panel/main/bug-bounty-aside-icon.png" alt="">
-                  <span>Bug Bounty Campaign</span>
-                </a>
-              </li>
-
-              <li class="item">
-                <a href="#">
-                  <img src="img/icon/header/slide-out-panel/main/liquidity-aside-icon.png" alt="">
-                  <span>Liquidity Mining Whitelist</span>
-                </a>
-              </li>
-
-              <li class="item">
-                <a href="#">
-                  <img src="img/icon/header/slide-out-panel/main/mdex-aside-icon.png" alt="">
-                  <span>MDEX Ecological Fund Application</span>
-                </a>
-              </li>
-
-              <li class="item">
-                <a href="#">
-                  <img src="img/icon/header/slide-out-panel/main/news-aside-icon.png" alt="">
-                  <span>News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
-    <!---->
+  </div>
+</div>
+<!---->
 
-    <!-- Modal Lang-->
-    <div class="modal fade" id="modalLang" tabindex="-1"  aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="select-language d-flex flex-wrap">
-              <div class="select-info active"><a href="#">English</a></div>
-              <div class="select-info"><a href="#">简体中文</a></div>
-              <div class="select-info"><a href="#">繁体中文</a></div>
-              <div class="select-info"><a href="#">日本語</a></div>
-              <div class="select-info"><a href="#">Türk</a></div>
-              <div class="select-info"><a href="#">한국어</a></div>
-              <div class="select-info"><a href="#">Россия</a></div>
-            </div>
-            <div class="social-list-nav">
-              <ul class="d-flex flex-wrap">
-                <li><a href="#"><img src="img/icon/header/social-modal/github-icon-modal.png" alt="">GitHub</a></li>
-                <li><a href="#"><img src="img/icon/header/social-modal/medium-icon-modal.png" alt="">Medium</a></li>
-                <li><a href="#"><img src="img/icon/header/social-modal/telegram-icon-modal.png" alt="">Telegram</a></li>
-                <li><a href="#"><img src="img/icon/header/social-modal/twitter-icon-modal.png" alt="">Twitter</a></li>
-                <li><a href="#"><img src="img/icon/header/social-modal/discord-icon-modal.png" alt="">Discord</a></li>
-              </ul>
-            </div>
-            <div class="aff-emai text-center">
-              <span> Business cooperation：business@mdex.com</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!---->
+<!-- Modal Lang-->
+<div class="modal fade" id="modalLang" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
 
-    <section class="banner-bar">
-      <div class="container-fluid">
-
-        <h1 class="banner-title text-center text-white">Heco Eco-Currency Trading Choose MDEX.COM for faster and better</h1>
-
-        <h2 class="banner-title-describe text-center">The largest DeFi ecosystem with DEX, IMO and DAO</h2>
-
-      </div>
-    </section>
-
-    <section class="wind-mining-section">
-      <div class="conteiner-fluid">
-
-        <div class="wind-mining-content">
-          <p class="label-input">Choose the cross-chain bridge asset</p>
-
-          <div class="select-asset d-flex align-items-center" data-toggle="modal" data-target="#assetModal">
-            <div class="option-img">
-              <img src="https://mdex.co/token-icons/heco/0x25d2e80cb6b86881fd7e07dd263fb79f4abe033c.png" alt="" class="bet-icon" >
-            </div>
-            <div class="option-lable">MDX</div>
-          </div>
-
-          <div class="bet-item d-flex justify-content-between align-items-center">
-            
-            <div class="bet-info">
-              <div class="bet-text">From</div>
-              <div class="bet-selete d-flex justify-content-between align-items-center">
-                <div class="span">
-                  <img src="img/icon/h-info-item-1-icon.png" class="bet-icon">
-                </div>
-                <span>HECO</span>
-                <i></i>
-              </div>
-            </div>
-            
-            <div class="bet-arrow d-flex justify-content-center align-items-center">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAC70lEQVRoQ+3XTWgTQRQH8PdmW7W1KhSUNDRktRU/6EFB2aSoeOkhIhZFxINgrQcV8SRSRQ85iEjx5EFEL4IieFGkIJWKBLTtBo+Fgth2t6UmrQdFbWuIyTxJitgNxGS3+0WZXDfz5v3ef5hNEFbYB1eYBwTI74mKhERCLk9AHDmXB256O5GQ6ZG5vEAk5PLATW8nEjI9sjILAnLkAhLdJKA0SDVnZiaGPthR25OEmndGG3Pz/AsASUUE4k8mYSw1rg4uF+UP0KJivgbZ4WldTSwH5Qmo0HBQjvRw4reXNo8ACyixztSE+sYqyjNQoeEmWblGRLcMKMQMADua1of7raA8BRUaDoSVywB0x4iCLCI7ntLUPrMoz0HF47c5colzftfQPMJvJHYyPak+N4PyBWjx+EXOE/F7hTvvHwBzDPFUSlefVYvyDaiYVFjp5kAPAYAtQeWRQVdaSz6pBlUWFN6xvyn7K3sVAJqrKWTXdwgoBAR7jEkBl5Cd/ayrjyrtUxbUFFbeEdC+SgXce445xmraUtrgx//tWRYUkJXvQLTevYYr74QgHUtPDr+wBgorvQB0pfI2bn0DtYZa2DU2lvxhCVR8R2xp34t5HnKrZWK8gQhuIMHWkpftJ0CpI60NTVbqxTe3nCwfDGRoYQAA2ozvIxypQ+jQtORsJUzhuS9AshyRM0QDANRagkmuWlcbmxp5/60ajC9AQTm6nYgPEFDJ6wHfNq6t6xwdTcxVi/EcFAxHdxPmXxPBxpKfPX1roP6EricyZjCegoIt0Xaez78Cgg3GCwCebpPrTycSiZxZjGeg1tbY6rnc1ykg2lSCuX+u69DFeDzOrWA8AwVbDoR4LjNlPGasd0ZXe6xC/q7z7JYLyMpLIDoCAJwhXk/pScO/V6swz0DxeJw9eNwfZYCz0+PDY1YBpes8A9kFECCnJulUXXHknJqsXXVFQnZN0qk6IiGnJmtXXZGQXZN0qo5IyKnJ2lVXJGTXJJ2q8wdrMdY1uxKNFQAAAABJRU5ErkJggg==" alt="" class="point-img">
-            </div>
-            
-            <div class="bet-info">
-              <div class="bet-text">To</div>
-              <div class="bet-selete d-flex justify-content-between align-items-center">
-                <span class="span">
-                  <img src="img/icon/h-info-item-2-icon.png" class="bet-icon">
-                </span>
-                <span>BSC</span>
-                <img src="img/icon/bridge-page/arrow-right.png" alt="" class="selete-img">
-              </div>
-
-              <div class="bet-hide dropdown-menu">
-
-                <section  class="selete-assets center  aaa" >
-                  <div class="assets-body assets-body-2">
-                    <div class="top_head">
-                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAFVBMVEUAAACxxMS8vMm2ws65wMy4vsy4vsyaylFoAAAABnRSTlMADRMVadNlkglKAAAAUklEQVQI12MQUWAAAyZHBrdgCNM0hUE11QDEYg4LAmKwsClIBExABMCkKUQZkIKqAglDBUHCUEGQMEwQmYlQgKQNYRiSFQiLkZyD5EgkpyM8BADEsxkb26/ApwAAAABJRU5ErkJggg==" class="close-icon">
-                    </div>
-                    <div  class="content">
-
-                      <div  class="list-dropdown active d-flex justify-content-between align-items-center">
-                        <div class="start">
-                          <span  class="span">
-                            <img src="img/icon/h-info-item-2-icon.png" class="bet-icon">
-                          </span>
-                          <span> BSC</span>
-                        </div>
-                        <div >
-                          <img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt="">
-                        </div>
-                      </div>
-
-                      <div  class="list-dropdown d-flex justify-content-between align-items-center">
-                        <div class="start">
-                          <span  class="span">
-                            <img src="img/icon/h-info-item-2-icon.png" class="bet-icon">
-                          </span>
-                          <span> BSC</span>
-                        </div>
-                        <div >
-                          <img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt="">
-                        </div>
-                      </div>
-
-
-                    </div>
-                  </div>
-                </section>
-
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="dest_address">Receiving address</label>
-            <input type="text" class="form-control" id="dest_address" placeholder="Destination address">
-          </div>
-
-          <div class="addr-verify">
-            <span >invalid destionation address</span>
-          </div>
-
-          <div class="text-tip">
-            <img src="img/icon/bridge-page/star-icon.png" alt="">
-            <span >Please enter the correct BEP20 address, wrong address will UNABLE to receive(<b style="color:red">not an exchange/contract address</b>)</span>
-          </div>
-
-          <p class="selete-name d-flex justify-content-between align-items-center">
-            <span >  Amount</span>
-            <span class="tip-let"> Insufficient balance </span>
-          </p>
-
-          <div class="assets-item d-flex justify-content-between align-items-center">
-            <div class="assets-input d-flex justify-content-start align-items-center">
-              <img src="https://mdex.co/token-icons/heco/0x25d2e80cb6b86881fd7e07dd263fb79f4abe033c.png" alt="" class="bet-icon">
-              <input type="number" placeholder="Minimum amount is  1">
-            </div>
-
-            <div class="assets-info d-flex justify-content-center align-items-center">
-              <span class="assets-type">MDX</span>
-              <button disabled="disabled" class="assets-max"> Max</button>
-            </div>
-          </div>
-
-          <div class="available d-flex justify-content-start align-items-center">
-            <span >Balance：</span><span class="numbers Medium">0</span><span class="numbers Medium"> MDX</span>
-          </div>
-
-          <button type="button" class="action-button btn btn-success btn-block action-button">Connect your wallet</button>
-
-          <div class="quota-name" data-toggle="modal" data-target="#dailyCrossLimitModal">
-            <span> Daily cross-chain limit
-              <img src="img/icon/bridge-page/question-icon.png" alt="" class="bet-icon">
-            </span>
-          </div>
-
-          <div class="quota d-flex justify-content-end align-items-center">
-            <span class="quota-zj"> 48&nbsp;207,186 </span>
-            <span class="quota-text">/ 9&nbsp;999&nbsp;999&nbsp;999 </span>
-            <span class="quota-text"> MDX</span>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-
-          <div class="record d-flex justify-content-center align-items-center">
-            <a href="#" class="text-success">Transaction History</a>
-          </div>
-
-        </div>
-
-        <p class="powered-text text-center">Powered By Poly.Network</p>
-
-      </div>
-    </section>
-
-
-
-
-
-    <footer class="footer-desktop">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-3 d-flex flex-column">
-
-            <a href="#" class="logo-footer"><img src="img/icon/footer/mdex-footer-icon.png" alt=""></a>
-
-            <ul class="social-list-footer flex-grow-1">
-              <li>
-                <a href="#"><img src="img/icon/footer/github-icon.png" alt=""></a>
-              </li>
-              <li>
-                <a href="#"><img src="img/icon/footer/medium-icon.png" alt=""></a>
-              </li>
-              <li>
-                <a href="#"><img src="img/icon/footer/telegram-icon.png" alt=""></a>
-              </li>
-              <li>
-                <a href="#"><img src="img/icon/footer/twitter-icon.png" alt=""></a>
-              </li>
-              <li>
-                <a href="#"><img src="img/icon/footer/discord-icon.png" alt=""></a>
-              </li>
-              <li>
-                <a href="#"><img src="img/icon/footer/weibo-icon.png" alt=""></a>
-              </li>
-            </ul>
-
-            <p class="copyright-text">©2021 Mdex.com.All rights reserved</p>
-          </div>
-
-          <div class="col-3">
-            <div class="text-link">
-              <h3 class="footer-title">Application</h3>
-
-              <ul>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSem595jWpO5_A5fRj9W4-wX_3mg3ypqqNiXcC_yi-tpcbOaqA/viewform" target="_blank">Listing Token</a></li>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSem595jWpO5_A5fRj9W4-wX_3mg3ypqqNiXcC_yi-tpcbOaqA/viewform" target="_blank">Liquidity Mining Whitelist</a></li>
-                <li><a href="https://forms.gle/b6SCc4cXzn7apFhk7" target="_blank">IMO Application</a></li>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdn9wYhf_jI01nNORQXWgiyGSPKcVTP4fCq2cLYBxINd35vuw/viewform" target="_blank">MDEX Ecological Fund Application</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-2">
-            <div  class="text-link">
-              <h3 class="footer-title">Guide</h3>
-              <ul>
-                <li><a href="https://ht.mdex.co/#/swap?lang=en" target="_blank">Swap</a></li>
-                <li><a href="https://ht.mdex.co/#/pool?lang=en" target="_blank">Pool</a></li>
-                <li><a href="https://info.mdex.co/" target="_blank">Info</a></li>
-                <li><a href="https://info.mdex.co/" target="_blank">Liquidity</a></li>
-                <li><a href="https://info.mdex.co/" target="_blank">Boardroom</a></li>
-                <li><a href="https://info.mdex.co/" target="_blank">Trading</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-2">
-            <div  class="text-link">
-              <h3 class="footer-title">Doc</h3>
-              <ul>
-                <li><a href="https://mdexdoc.gitbook.io/doc//faq" target="_blank">FAQ</a></li>
-                <li><a href="https://mdexdoc.gitbook.io/doc/yong-hu-zhi-nan" target="_blank">User Guide</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="text-link">
-              <h3 class="footer-title">About</h3>
-              <ul>
-                <li><a href="https://mdexdoc.gitbook.io/doc/gong-gao-1" target="_blank">Announcement</a></li>
-                <li><a href="https://mdexcom.zendesk.com/hc/en-gb/sections/360012110672-Adjustment-of-Pool" target="_blank">Adjustment of Pool</a></li>
-                <li><a href="#">Ecological Fund</a></li>
-                <li><a href="#">Bug Bounty Campaign</a></li>
-                <li><a href="https://mdexdoc.gitbook.io/doc/lian-xi-wo-men" target="_blank">Contact us</a></li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </footer>
-
-    <footer class="footer-mobile">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">
-            <span class="icon icon-home"></span>
-            <span class="title-link">Home</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span class="icon icon-swap"></span>
-            <span class="title-link">Swap</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span class="icon icon-farm"></span>
-            <span class="title-link">Farm</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span class="icon icon-charts"></span>
-            <span class="badge badge-success">Beta</span>
-            <span class="title-link">Charts</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span class="icon icon-boardroom"></span>
-            <span class="title-link">Boardroom</span>
-          </a>
-        </li>
-      </ul>
-    </footer>
-
-    <!-- Modal Daily cross-chain limit-->
-    <div class="modal fade" id="dailyCrossLimitModal" tabindex="-1" aria-labelledby="dailyCrossLimitModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAFVBMVEUAAACxxMS8vMm2ws65wMy4vsy4vsyaylFoAAAABnRSTlMADRMVadNlkglKAAAAUklEQVQI12MQUWAAAyZHBrdgCNM0hUE11QDEYg4LAmKwsClIBExABMCkKUQZkIKqAglDBUHCUEGQMEwQmYlQgKQNYRiSFQiLkZyD5EgkpyM8BADEsxkb26/ApwAAAABJRU5ErkJggg==" class="close-icon">
+                <img src="img/icon/close-modal-icon.png" class="close-icon">
               </span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="msg-modal">
-              <p class="title">Daily cross-chain limit description：</p>
-              <p class="title">Fee description</p>
-              <p class="">Since the circulation of MDX tokens in the initial stage of BSC's launch is small, in order to protect the interest of users, MDEX limits the total amount of MDX cross-chain daily. When the MDX circulation of the BSC network is sufficient, this restriction will be lifted</p>
-              <p class="">You need to pay the gas fee of the target network as a cross-chain handling fee. The handling fee is charged by the cross-chain service provider. Mdex does not charge user handling fees.</p>
-            </div>
-          </div>
+        </button>
+
+      </div>
+      <div class="modal-body">
+        <div class="select-language d-flex flex-wrap">
+          <div class="select-info active"><a href="#">English</a></div>
+          <div class="select-info"><a href="#">简体中文</a></div>
+          <div class="select-info"><a href="#">繁体中文</a></div>
+          <div class="select-info"><a href="#">日本語</a></div>
+          <div class="select-info"><a href="#">Türk</a></div>
+          <div class="select-info"><a href="#">한국어</a></div>
+          <div class="select-info"><a href="#">Россия</a></div>
+        </div>
+        <div class="social-list-nav">
+          <ul class="d-flex flex-wrap">
+            <li><a href="#"><img src="img/icon/header/social-modal/github-icon-modal.png" alt="">GitHub</a></li>
+            <li><a href="#"><img src="img/icon/header/social-modal/medium-icon-modal.png" alt="">Medium</a></li>
+            <li><a href="#"><img src="img/icon/header/social-modal/telegram-icon-modal.png" alt="">Telegram</a></li>
+            <li><a href="#"><img src="img/icon/header/social-modal/twitter-icon-modal.png" alt="">Twitter</a></li>
+            <li><a href="#"><img src="img/icon/header/social-modal/discord-icon-modal.png" alt="">Discord</a></li>
+          </ul>
+        </div>
+        <div class="aff-emai text-center">
+          <span> Business cooperation：business@mdex.com</span>
         </div>
       </div>
     </div>
-    <!---->
+  </div>
+</div>
+<!---->
 
-    <!-- Modal --Choose the cross-chain bridge asset -->
-    <div class="modal fade" id="assetModal" tabindex="-1" role="dialog" aria-labelledby="assetModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+<section class="banner-bar">
+  <div class="container-fluid">
 
-          <div class="modal-header d-block">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAFVBMVEUAAACxxMS8vMm2ws65wMy4vsy4vsyaylFoAAAABnRSTlMADRMVadNlkglKAAAAUklEQVQI12MQUWAAAyZHBrdgCNM0hUE11QDEYg4LAmKwsClIBExABMCkKUQZkIKqAglDBUHCUEGQMEwQmYlQgKQNYRiSFQiLkZyD5EgkpyM8BADEsxkb26/ApwAAAABJRU5ErkJggg==" class="close-icon">
-              </span>
-            </button>
+    <h1 class="banner-title text-center text-white">Heco Eco-Currency Trading Choose MDEX.COM for faster and better</h1>
+
+    <h2 class="banner-title-describe text-center">The largest DeFi ecosystem with DEX, IMO and DAO</h2>
+
+  </div>
+</section>
+
+<section class="wind-mining-section">
+  <div class="conteiner-fluid">
+
+    <div class="wind-mining-content" id="main_bridge_window">
+
+      <p class="label-input">Choose the cross-chain bridge asset</p>
+
+      <div class="select-asset d-flex align-items-center" data-toggle="modal" data-target="#assetModal">
+        <div class="option-img">
+          <img src="https://mdex.co/token-icons/heco/0x25d2e80cb6b86881fd7e07dd263fb79f4abe033c.png" alt="" class="bet-icon">
+        </div>
+        <div class="option-lable">MDX</div>
+      </div>
+
+      <div class="bet-item d-flex justify-content-between align-items-center">
+
+        <div class="bet-info">
+          <div class="bet-text">From</div>
+          <div class="bet-selete d-flex justify-content-between align-items-center">
+            <div class="span">
+              <img src="img/icon/h-info-item-1-icon.png" class="bet-icon">
+            </div>
+            <span>HECO</span> <i></i>
+          </div>
+        </div>
+
+        <div class="bet-arrow d-flex justify-content-center align-items-center">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAC70lEQVRoQ+3XTWgTQRQH8PdmW7W1KhSUNDRktRU/6EFB2aSoeOkhIhZFxINgrQcV8SRSRQ85iEjx5EFEL4IieFGkIJWKBLTtBo+Fgth2t6UmrQdFbWuIyTxJitgNxGS3+0WZXDfz5v3ef5hNEFbYB1eYBwTI74mKhERCLk9AHDmXB256O5GQ6ZG5vEAk5PLATW8nEjI9sjILAnLkAhLdJKA0SDVnZiaGPthR25OEmndGG3Pz/AsASUUE4k8mYSw1rg4uF+UP0KJivgbZ4WldTSwH5Qmo0HBQjvRw4reXNo8ACyixztSE+sYqyjNQoeEmWblGRLcMKMQMADua1of7raA8BRUaDoSVywB0x4iCLCI7ntLUPrMoz0HF47c5colzftfQPMJvJHYyPak+N4PyBWjx+EXOE/F7hTvvHwBzDPFUSlefVYvyDaiYVFjp5kAPAYAtQeWRQVdaSz6pBlUWFN6xvyn7K3sVAJqrKWTXdwgoBAR7jEkBl5Cd/ayrjyrtUxbUFFbeEdC+SgXce445xmraUtrgx//tWRYUkJXvQLTevYYr74QgHUtPDr+wBgorvQB0pfI2bn0DtYZa2DU2lvxhCVR8R2xp34t5HnKrZWK8gQhuIMHWkpftJ0CpI60NTVbqxTe3nCwfDGRoYQAA2ozvIxypQ+jQtORsJUzhuS9AshyRM0QDANRagkmuWlcbmxp5/60ajC9AQTm6nYgPEFDJ6wHfNq6t6xwdTcxVi/EcFAxHdxPmXxPBxpKfPX1roP6EricyZjCegoIt0Xaez78Cgg3GCwCebpPrTycSiZxZjGeg1tbY6rnc1ykg2lSCuX+u69DFeDzOrWA8AwVbDoR4LjNlPGasd0ZXe6xC/q7z7JYLyMpLIDoCAJwhXk/pScO/V6swz0DxeJw9eNwfZYCz0+PDY1YBpes8A9kFECCnJulUXXHknJqsXXVFQnZN0qk6IiGnJmtXXZGQXZN0qo5IyKnJ2lVXJGTXJJ2q8wdrMdY1uxKNFQAAAABJRU5ErkJggg==" alt="" class="point-img">
+        </div>
+
+        <div class="bet-info">
+          <div class="bet-text">To</div>
+          <div class="bet-selete d-flex justify-content-between align-items-center">
+            <span class="span">
+              <img src="img/icon/h-info-item-2-icon.png" class="bet-icon">
+            </span> <span>BSC</span> <img src="img/icon/bridge-page/arrow-right.png" alt="" class="selete-img">
           </div>
 
-          <div class="modal-body modal-choose-bridge">
+          <div class="bet-hide dropdown-menu">
+
             <section class="selete-assets">
-              <div class="assets-body assets-body-1">
-                <p class="assets-title text-center">Choose the cross-chain bridge asset</p>
-
+              <div class="assets-body">
+                <div class="top_head">
+                  <img src="img/icon/close-modal-icon.png" class="close-icon">
+                </div>
                 <div class="content">
+
                   <div class="list-dropdown active d-flex justify-content-between align-items-center">
                     <div class="start">
-                      <img src="https://mdex.co/token-icons/heco/0x25d2e80cb6b86881fd7e07dd263fb79f4abe033c.png" alt="" class="bet-icon">
-                      <span>MDX</span>
+                      <span class="span">
+                        <img src="img/icon/h-info-item-2-icon.png" class="bet-icon">
+                      </span>
+                      <span> BSC</span>
                     </div>
-                    <div >
-                      <span >0.000000</span><span class="span-img"><img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt=""></span>
-                    </div></div>
+                    <div>
+                      <img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt="">
+                    </div>
+                  </div>
+
                   <div class="list-dropdown d-flex justify-content-between align-items-center">
                     <div class="start">
-                      <img src="https://mdex.co/token-icons/heco/0x38999fa3a7320bd2c3609bf0f8cb5cd4c11d3fe1.png" alt="" class="bet-icon"><span > TRIBE</span>
+                      <span class="span">
+                        <img src="img/icon/h-info-item-2-icon.png" class="bet-icon">
+                      </span>
+                      <span> BSC</span>
                     </div>
-                    <div >
-                      <span >0.000000</span><span class="span-img"><img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt="" ></span>
-                    </div></div>
-                  <div class="list-dropdown d-flex justify-content-between align-items-center">
-                    <div class="start">
-                      <img src="https://mdex.co/token-icons/heco/0x485cdbff08a4f91a16689e73893a11ae8b76af6d.png" alt="" class="bet-icon"><span > FEI</span>
+                    <div>
+                      <img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt="">
                     </div>
-                    <div >
-                      <span >0.000000</span><span class="span-img"><img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt="" ></span>
-                    </div></div>
-                  <div class="list-dropdown d-flex justify-content-between align-items-center">
-                    <div class="start">
-                      <img src="https://mdex.co/token-icons/heco/0x4f99d10e16972ff2fe315eee53a95fc5a5870ce3.png" alt="" class="bet-icon"><span > BNB</span>
-                    </div>
-                    <div >
-                      <span >0.000000</span><span class="span-img"><img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt="" ></span>
-                    </div></div>
-                  <div class="list-dropdown d-flex justify-content-between align-items-center">
-                    <div class="start">
-                      <img src="https://mdex.co/token-icons/heco/0x80861a817106665bca173db6ac2ab628a738c737.png" alt="" class="bet-icon"><span > COW</span>
-                    </div>
-                    <div >
-                      <span >0.000000</span><span class="span-img"><img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt="" ></span>
-                    </div></div>
-                  <div class="list-dropdown d-flex justify-content-between align-items-center">
-                    <div class="start">
-                      <img src="https://mdex.co/token-icons/heco/0xc38072aa3f8e049de541223a9c9772132bb48634.png" alt="" class="bet-icon"><span > SHIB</span>
-                    </div>
-                    <div >
-                      <span >0.000000</span><span class="span-img"><img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt="" ></span>
-                    </div></div>
+                  </div>
                 </div>
               </div>
             </section>
           </div>
+        </div>
+      </div>
 
+      <div class="form-group">
+        <label for="dest_address">Receiving address</label>
+        <input type="text" class="form-control" id="dest_address" placeholder="Destination address">
+      </div>
+
+      <div class="addr-verify">
+        <span>invalid destionation address</span>
+      </div>
+
+      <div class="text-tip">
+        <img src="img/icon/bridge-page/star-icon.png" alt="">
+        <span>Please enter the correct BEP20 address, wrong address will UNABLE to receive(<b>not an exchange/contract address</b>)</span>
+      </div>
+
+      <p class="selete-name d-flex justify-content-between align-items-center">
+        <span>Amount</span>
+        <span class="tip-let">Insufficient balance</span>
+      </p>
+
+      <div class="assets-item d-flex justify-content-between align-items-center">
+        <div class="assets-input d-flex justify-content-start align-items-center">
+          <img src="https://mdex.co/token-icons/heco/0x25d2e80cb6b86881fd7e07dd263fb79f4abe033c.png" alt="" class="bet-icon">
+          <input type="number" placeholder="Minimum amount is 1">
+        </div>
+
+        <div class="assets-info d-flex justify-content-center align-items-center">
+          <span class="assets-type">MDX</span>
+          <button disabled="disabled" class="assets-max"> Max</button>
+        </div>
+      </div>
+
+      <div class="available d-flex justify-content-start align-items-center">
+        <span>Balance：</span>
+        <span>0</span>
+        <span>MDX</span>
+      </div>
+
+      <button type="button" class="action-button btn btn-success btn-block action-button">Connect your wallet</button>
+
+      <div class="quota-name" data-toggle="modal" data-target="#dailyCrossLimitModal">
+        <span> Daily cross-chain limit
+          <img src="img/icon/bridge-page/question-icon.png" alt="" class="bet-icon">
+        </span>
+      </div>
+
+      <div class="quota d-flex justify-content-end align-items-center">
+        <span class="quota-zj"> 48&nbsp;207,186 </span> <span class="quota-text">/ 9&nbsp;999&nbsp;999&nbsp;999 </span>
+        <span class="quota-text"> MDX</span>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <div class="record d-flex justify-content-center align-items-center">
+        <a href="#" id="transaction_history" class="text-success">Transaction History</a>
+      </div>
+
+    </div>
+
+    <div class="wind-mining-content" id="transaction_history_window" style="display: none">
+      <div class="title-section d-flex justify-content-between align-items-center">
+        <a id="back_bridge_window">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAyCAYAAAATIfj2AAAC/ElEQVRoQ+3XQWgTURAG4HlrrCmoRS/7NiWBSkSoIvQgKtga1EtFBIWAVhARrDmIXooHEQkUDyIeFCTYgiAiKFVBsHpRaDEnpeihUgsWFppuZhFyaSzGkDeykMrypGk2Qval7J43efPNP7xMGKyxh60xDwQg1RMNEgoSanIHgpFrcsM9Hxck5LllTf5AkJDc8Gg0GimXy6c1TftuWdarJgfyz3H/lVAkEtlRqVQmAUCvfvMV27bv+YlqGBSJRGJCiCwRRZcBjLFxRDzWcqCuri59aWnpAwBsdxfPGLuEiPdbChSLxbaUSqUJANgtFT5i2/ZFPzHO2Z5Grru7e2OhUHhHRHulZJ6mUqkz6XRatAwoHo9vKBaLb4jokIR53dnZeXJqaqrsN6buhBKJRGhmZuYFAByXMBPhcLjfNM1fKmDqAqXTaS2TyTwGgAEJ87Gjo+PI7OzsoiqYukCc8wwRpSTMdCgUOpjL5QoqYVYFcc5vEdFVqei59vb2A6ZpomqYmiDDMK4JIW5KyeQAoBcRTRUxK4I452eJ6JGE+aFpWp9lWd9UxdQCTRPRTtdK81vTtH2WZX1WGVML5Pze9EsJDSPijZYExWKxbaVSKQsAhoQaQsQ7KqNWXH10Xd/FGJskoq1ugKZpg/l8flRVVM1djnO+h4jeA8AmF8DZ1wZs236mImrV5ZRzngCAt0QUdgHKjLETiDiuGmpVkFOwruvOn7aXALDedfM5+1s/Ijp/JZR56gJVUacA4AkAaK7qFxljhxHxkyqiukFOwYZhXBBCjEg3n7PP9SHiVxVQnkBOwZzzISK6LRWfb2tr652fn5/zG+UZVB2/YQC4LiVlhsPh/X4vrQ2BquN3VwhxWUpk1LbtQT9TahhERMwwjIdEdM518z1HxGRLgpyik8nkumw2+0AIcR4AMBQKHV1YWPjSsqDlwuPx+Oaenp6fY2NjFT8xztkNj5zfha90fgBSNZm/F5PqBXqtLxg5rx1r9vtBQs3uuNfzgoS8dqzZ7/8B1zv0M4bjZFEAAAAASUVORK5CYII=" alt="" class="selete-img poin">
+        </a>
+        <span>Across the chain record</span>
+        <span></span>
+      </div>
+      <div class="not-history d-flex justify-content-center align-items-center">
+        <div >
+          <img src="data:image/png;base64,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" alt="" class="selete-img">
+          <p >No record</p></div>
+      </div>
+      <div class="historyContainer"></div>
+    </div>
+
+    <p class="powered-text text-center">Powered By Poly.Network</p>
+
+  </div>
+</section>
+
+
+<footer class="footer-desktop">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-3 d-flex flex-column">
+
+        <a href="#" class="logo-footer"><img src="img/icon/footer/mdex-footer-icon.png" alt=""></a>
+
+        <ul class="social-list-footer flex-grow-1">
+          <li>
+            <a href="#"><img src="img/icon/footer/github-icon.png" alt=""></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/footer/medium-icon.png" alt=""></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/footer/telegram-icon.png" alt=""></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/footer/twitter-icon.png" alt=""></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/footer/discord-icon.png" alt=""></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/footer/weibo-icon.png" alt=""></a>
+          </li>
+        </ul>
+
+        <p class="copyright-text">©2021 Mdex.com.All rights reserved</p>
+      </div>
+
+      <div class="col-3">
+        <div class="text-link">
+          <h3 class="footer-title">Application</h3>
+
+          <ul>
+            <li>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSem595jWpO5_A5fRj9W4-wX_3mg3ypqqNiXcC_yi-tpcbOaqA/viewform" target="_blank">Listing Token</a>
+            </li>
+            <li>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSem595jWpO5_A5fRj9W4-wX_3mg3ypqqNiXcC_yi-tpcbOaqA/viewform" target="_blank">Liquidity Mining Whitelist</a>
+            </li>
+            <li><a href="https://forms.gle/b6SCc4cXzn7apFhk7" target="_blank">IMO Application</a></li>
+            <li>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdn9wYhf_jI01nNORQXWgiyGSPKcVTP4fCq2cLYBxINd35vuw/viewform" target="_blank">MDEX Ecological Fund Application</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="text-link">
+          <h3 class="footer-title">Guide</h3>
+          <ul>
+            <li><a href="https://ht.mdex.co/#/swap?lang=en" target="_blank">Swap</a></li>
+            <li><a href="https://ht.mdex.co/#/pool?lang=en" target="_blank">Pool</a></li>
+            <li><a href="https://info.mdex.co/" target="_blank">Info</a></li>
+            <li><a href="https://info.mdex.co/" target="_blank">Liquidity</a></li>
+            <li><a href="https://info.mdex.co/" target="_blank">Boardroom</a></li>
+            <li><a href="https://info.mdex.co/" target="_blank">Trading</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="text-link">
+          <h3 class="footer-title">Doc</h3>
+          <ul>
+            <li><a href="https://mdexdoc.gitbook.io/doc//faq" target="_blank">FAQ</a></li>
+            <li><a href="https://mdexdoc.gitbook.io/doc/yong-hu-zhi-nan" target="_blank">User Guide</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="text-link">
+          <h3 class="footer-title">About</h3>
+          <ul>
+            <li><a href="https://mdexdoc.gitbook.io/doc/gong-gao-1" target="_blank">Announcement</a></li>
+            <li>
+              <a href="https://mdexcom.zendesk.com/hc/en-gb/sections/360012110672-Adjustment-of-Pool" target="_blank">Adjustment of Pool</a>
+            </li>
+            <li><a href="#">Ecological Fund</a></li>
+            <li><a href="#">Bug Bounty Campaign</a></li>
+            <li><a href="https://mdexdoc.gitbook.io/doc/lian-xi-wo-men" target="_blank">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<footer class="footer-mobile">
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" href="#"> <span class="icon icon-home"></span> <span class="title-link">Home</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"> <span class="icon icon-swap"></span> <span class="title-link">Swap</span> </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"> <span class="icon icon-farm"></span> <span class="title-link">Farm</span> </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"> <span class="icon icon-charts"></span> <span class="badge badge-success">Beta</span>
+        <span class="title-link">Charts</span> </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"> <span class="icon icon-boardroom"></span> <span class="title-link">Boardroom</span>
+      </a>
+    </li>
+  </ul>
+</footer>
+
+<!-- Modal Daily cross-chain limit-->
+<div class="modal fade" id="dailyCrossLimitModal" tabindex="-1" aria-labelledby="dailyCrossLimitModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <img src="img/icon/close-modal-icon.png" class="close-icon">
+              </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="msg-modal">
+          <p class="title">Daily cross-chain limit description：</p>
+          <p class="title">Fee description</p>
+          <p class="">Since the circulation of MDX tokens in the initial stage of BSC's launch is small, in order to protect the interest of users, MDEX limits the total amount of MDX cross-chain daily. When the MDX circulation of the BSC network is sufficient, this restriction will be lifted</p>
+          <p class="">You need to pay the gas fee of the target network as a cross-chain handling fee. The handling fee is charged by the cross-chain service provider. Mdex does not charge user handling fees.</p>
         </div>
       </div>
     </div>
-    <!---->
+  </div>
+</div>
+<!---->
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
-    <script type="module" src="assets/js/countUp.min.js"></script>
-    <script type="module" src="assets/js/starter.js"></script>
-  </body>
+<!-- Modal --Choose the cross-chain bridge asset -->
+<div class="modal fade" id="assetModal" tabindex="-1" role="dialog" aria-labelledby="assetModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header d-block">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <img src="img/icon/close-modal-icon.png" class="close-icon">
+              </span>
+        </button>
+      </div>
+
+      <div class="modal-body modal-choose-bridge">
+        <section class="selete-assets">
+          <div class="assets-body assets-body-1">
+            <p class="assets-title text-center">Choose the cross-chain bridge asset</p>
+
+            <div class="content">
+              <div class="list-dropdown active d-flex justify-content-between align-items-center">
+                <div class="start">
+                  <img src="https://mdex.co/token-icons/heco/0x25d2e80cb6b86881fd7e07dd263fb79f4abe033c.png" alt="" class="bet-icon">
+                  <span>MDX</span>
+                </div>
+                <div>
+                  <span>0.000000</span><span class="span-img"><img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt=""></span>
+                </div>
+              </div>
+              <div class="list-dropdown d-flex justify-content-between align-items-center">
+                <div class="start">
+                  <img src="https://mdex.co/token-icons/heco/0x38999fa3a7320bd2c3609bf0f8cb5cd4c11d3fe1.png" alt="" class="bet-icon"><span> TRIBE</span>
+                </div>
+                <div>
+                  <span>0.000000</span><span class="span-img"><img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt=""></span>
+                </div>
+              </div>
+              <div class="list-dropdown d-flex justify-content-between align-items-center">
+                <div class="start">
+                  <img src="https://mdex.co/token-icons/heco/0x485cdbff08a4f91a16689e73893a11ae8b76af6d.png" alt="" class="bet-icon"><span> FEI</span>
+                </div>
+                <div>
+                  <span>0.000000</span><span class="span-img"><img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt=""></span>
+                </div>
+              </div>
+              <div class="list-dropdown d-flex justify-content-between align-items-center">
+                <div class="start">
+                  <img src="https://mdex.co/token-icons/heco/0x4f99d10e16972ff2fe315eee53a95fc5a5870ce3.png" alt="" class="bet-icon"><span> BNB</span>
+                </div>
+                <div>
+                  <span>0.000000</span><span class="span-img"><img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt=""></span>
+                </div>
+              </div>
+              <div class="list-dropdown d-flex justify-content-between align-items-center">
+                <div class="start">
+                  <img src="https://mdex.co/token-icons/heco/0x80861a817106665bca173db6ac2ab628a738c737.png" alt="" class="bet-icon"><span> COW</span>
+                </div>
+                <div>
+                  <span>0.000000</span><span class="span-img"><img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt=""></span>
+                </div>
+              </div>
+              <div class="list-dropdown d-flex justify-content-between align-items-center">
+                <div class="start">
+                  <img src="https://mdex.co/token-icons/heco/0xc38072aa3f8e049de541223a9c9772132bb48634.png" alt="" class="bet-icon"><span> SHIB</span>
+                </div>
+                <div>
+                  <span>0.000000</span><span class="span-img"><img class="bet-icon active-check" src="img/icon/bridge-page/check-icon.png" alt=""></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!---->
+
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
+<script type="module" src="assets/js/countUp.min.js"></script>
+<script type="module" src="assets/js/starter.js"></script>
+</body>
 </html>

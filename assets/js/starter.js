@@ -127,5 +127,26 @@ $(document).ready(function() {
 
   });
 
+  //click transaction history
+  $("#transaction_history").on("click", function(e) {
+
+    e.preventDefault();
+
+    $('#main_bridge_window').css({'display' : 'none'});
+    $('#transaction_history_window').css({'display' : 'block'});
+
+  });
+
+  $("#back_bridge_window").on("click", function(e) {
+
+    e.preventDefault();
+
+    $('#main_bridge_window').css({'display' : 'block'});
+    $('#transaction_history_window').css({'display' : 'none'});
+
+  });
+
+
+
 
 });
