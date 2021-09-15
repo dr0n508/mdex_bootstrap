@@ -1,159 +1,239 @@
-.wind-mining {
- padding-bottom: 150px;
+.wind-mining-section {
+  padding-bottom: 150px;
+  .powered-text {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8d96af;
+  }
 }
 
 .wind-mining-content {
   width: 415px;
   padding: 20px;
   margin: -100px auto 0;
+  font-size: 12px;
+  font-weight: 500;
   background-color: #fff;
   border-radius: 10px;
-  font-size: 12px;
   box-shadow: 0 20px 30px 0 rgba(81, 85, 121, .03);
-
+  .select-asset {
+    position: relative;
+    height: 50px;
+    padding: 0 1.5em 0 1em;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    background: #f1f3f7;
+    border-radius: 8px;
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 1em;
+      display: inline-block;
+      width: 7px;
+      height: 12px;
+      margin-top: -6px;
+      content: "";
+      background: url("../../img/icon/bridge-page/arrow-right.png") 50% 50%;
+      background-size: cover;
+    }
+    .option-img {
+      margin-right: 0.571429em;
+      img {
+        width: 20px;
+        height: 20px;
+        float: left;
+      }
+    }
+    .option-lable {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+  .bet-item {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    .bet-text {
+      height: 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .bet-info {
+      position: relative;
+      width: 100%;
+      .bet-selete {
+        height: 60px;
+        padding: 0 10px;
+        font-size: 16px;
+        color: #181f36;
+        cursor: pointer;
+        background: #fff;
+        border-radius: 9px;
+        box-shadow: 0 5px 15px 0 rgba(15, 21, 77, .08);
+        .selete-img {
+          height: 12px;
+          width: 7px;
+        }
+      }
+    }
+    .bet-arrow {
+      flex-shrink: 0;
+      width: 58px;
+      height: 80px;
+      padding-top: 20px;
+      .point-img {
+        width: 26px;
+        height: 26px;
+      }
+    }
+    .bet-hide {
+      .assets-body {
+        width: 240px;
+        padding: 37px 13px 13px 13px;
+        .close-icon {
+          position: absolute;
+          top: 18px;
+          right: 18px;
+          width: 18px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .form-control {
+    height: 50px;
+  }
+  .addr-verify {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: red;
+  }
   .action-button {
     outline: none;
     box-shadow: 0 9px 10px 0 rgba(1, 207, 170, .2);
   }
-}
 
-.select-asset {
-  position: relative;
-  height: 50px;
-  padding: 0 1.5em 0 1em;
-  margin-bottom: 1.5em;
-  cursor: pointer;
-  background: #f1f3f7;
-  border-radius: 8px;
-  &::after {
-    position: absolute;
-    top: 50%;
-    right: 1em;
-    display: inline-block;
-    width: 7px;
-    height: 12px;
-    margin-top: -6px;
-    content: "";
-    background: url("../../img/icon/bridge-page/arrow-right.png") 50% 50%;
-    background-size: cover;
+  .available {
+    height: 17px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #626e88;
+    line-height: 17px;
   }
-  .option-img {
-    margin-right: 0.571429em;
-    img {
-      width: 20px;
-      height: 20px;
-      float: left;
+  .quota {
+    .quota-zj {
+      font-weight: 600;
     }
-  }
-  .option-lable {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-}
-
-.bet-text {
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.bet-info {
-  width: 100%;
-  position: relative;
-
-  .bet-selete {
-    height: 60px;
-    background: #fff;
-    box-shadow: 0 5px 15px 0 rgba(15, 21, 77, .08);
-    border-radius: 9px;
-    padding: 0 10px;
-    font-size: 16px;
-    color: #181f36;
-    cursor: pointer;
-
-  }
-}
-
-.bet-img {
-  flex-shrink: 0;
-  width: 58px;
-  height: 80px;
-  padding-top: 20px;
-  .point-img {
-    width: 26px;
-    height: 26px;
-  }
-}
-
-.assets-item {
-  height: 50px;
-  background: #f1f3f7;
-  border-radius: 8px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  .assets-input {
-    padding-left: 13px;
-    width: 100%;
-    img {
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-    }
-    input {
-      width: 100%;
-      height: 50px;
-      background: #f1f3f7;
-      margin-left: 12px;
-      font-size: 14px;
-      font-weight: 500;
-      border: none;
-      outline: none;
-    }
-
-
-  }
-  .assets-info {
-    padding-right: 13px;
-    .assets-type {
+    .quota-text {
       display: inline-block;
-      line-height: 20px;
-      font-size: 16px;
-      font-weight: 500;
+      margin-left: 2px;
       color: #181f36;
     }
-    .assets-max {
-      display: inline-block;
-      margin-left: 5px;
-      cursor: pointer;
-      min-width: 46px;
-      height: 20px;
-      line-height: 20px;
-      text-align: center;
-      box-shadow: 0 2px 4px 0 rgba(75, 255, 239, .2);
-      border-radius: 4px;
-      font-size: 12px;
-      outline: none;
-      border: none;
-      &:disabled {
-        background: #dde2eb!important;
-        box-shadow: 0 10px 10px 0 rgba(128, 139, 159, .15)!important;
-        color: #979797!important;
+  }
+  .assets-item {
+    height: 50px;
+    background: #f1f3f7;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .assets-input {
+      padding-left: 13px;
+      width: 100%;
+      img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+      }
+      input {
+        width: 100%;
+        height: 50px;
+        background: #f1f3f7;
+        margin-left: 12px;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        outline: none;
+      }
+    }
+    .assets-info {
+      padding-right: 13px;
+      .assets-type {
+        display: inline-block;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #181f36;
+      }
+      .assets-max {
+        display: inline-block;
+        margin-left: 5px;
+        cursor: pointer;
+        min-width: 46px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        box-shadow: 0 2px 4px 0 rgba(75, 255, 239, .2);
+        border-radius: 4px;
+        font-size: 12px;
+        outline: none;
+        border: none;
+        color: #fff;
+        background: #03ad90;
+
+        &:disabled {
+          background: #dde2eb!important;
+          box-shadow: 0 10px 10px 0 rgba(128, 139, 159, .15)!important;
+          color: #979797!important;
+        }
       }
     }
   }
-
-
-}
-
-
-.text-tip {
-  padding: 2px;
-  margin-bottom: 5px;
-  line-height: 17px;
-  color: #626e88;
-  img {
-    float: left;
-    width: 12px;
-    height: 12px;
+  .text-tip {
+    padding: 2px;
+    margin-top: -12px;
+    margin-bottom: 5px;
+    line-height: 17px;
+    color: #626e88;
+    img {
+      float: left;
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .selete-name {
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 550;
+    color: #181f36;
+    .tip-let {
+      color: #cf1414;
+    }
+  }
+  .action-button {
+    height: 50px;
+    margin-top: 18px;
+    font-size: 18px;
+  }
+  .quota-name {
+    margin-top: 5px;
+    padding-top: 5px;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    img {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .record {
+    height: 20px;
+    padding-top: 15px;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -164,84 +244,15 @@
       font-weight: 600;
       color: #181f36;
     }
-    //.list {
-    //  font-weight: 500;
-    //  margin-bottom: 10px;
-    //  height: 44px;
-    //  border-bottom: 1px solid #e6e6e6;
-    //  padding: 0 13px;
-    //  &:hover {
-    //    background: #f6f7fb;
-    //    border-radius: 18px;
-    //  }
-    //  .start {
-    //
-    //   .bet-icon {
-    //
-    //     margin-right: 10px;
-    //   }
-    //  }
-    //  img {
-    //    width: 20px;
-    //    height: 20px;
-    //    border-radius: 50%;
-    //  }
-    //  .span-img {
-    //    display: inline-block;
-    //    width: 30px;
-    //    text-align: right;
-    //  }
-    //}
   }
 }
 
-.quota-name {
-  margin-top: 5px;
-  padding-top: 5px;
-  height: 20px;
-  font-size: 12px;
-  cursor: pointer;
-  img {
-    width: 12px;
-    height: 12px;
-  }
-}
-
-.quota {
-  .quota-zj {
-    font-weight: 600;
-  }
-  .quota-text {
-    display: inline-block;
-    margin-left: 2px;
-    color: #181f36;
-  }
-}
-
-
-.bet-hide {
-  .assets-body {
-    padding: 37px 13px 13px 13px;
-    width: 240px;
-    .close-icon {
-      position: absolute;
-      right: 18px;
-      top: 18px;
-      width: 18px;
-      cursor: pointer;
-    }
-
-  }
-}
-
-
-//TODO list dropdowns
-.list {
-  font-weight: 500;
-  margin-bottom: 10px;
-  height: 44px;
-  border-bottom: 1px solid #e6e6e6;
+.list-dropdown {
   padding: 0 13px;
+  height: 44px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  font-weight: 500;
   &:hover {
     background: #f6f7fb;
     border-radius: 18px;
