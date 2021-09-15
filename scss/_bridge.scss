@@ -1,3 +1,14 @@
+.bridge-page {
+  .modal-dialog {
+    max-width: 415px;
+    .modal-content {
+      .modal-header {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
 .wind-mining-section {
   padding-bottom: 150px;
   .powered-text {
@@ -40,8 +51,8 @@
     .option-img {
       margin-right: 0.571429em;
       img {
-        width: 20px;
-        height: 20px;
+        //width: 20px;
+        //height: 20px;
         float: left;
       }
     }
@@ -141,9 +152,9 @@
       padding-left: 13px;
       width: 100%;
       img {
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
+        //height: 20px;
+        //width: 20px;
+        //border-radius: 50%;
       }
       input {
         width: 100%;
@@ -258,20 +269,48 @@
     border-radius: 18px;
   }
   .start {
-
-    .bet-icon {
-
-      margin-right: 10px;
-    }
+    font-size: 14px;
   }
   img {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+    //width: 20px;
+    //height: 20px;
+    //border-radius: 50%;
   }
   .span-img {
     display: inline-block;
     width: 30px;
     text-align: right;
+  }
+}
+
+.list-dropdown {
+  .active-check {
+    display: none;
+  }
+}
+.list-dropdown.active .active-check {
+  display: block;
+}
+
+.active-check {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+
+.bet-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.msg-modal {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #808193;
+  .title {
+    font-weight: 600;
   }
 }

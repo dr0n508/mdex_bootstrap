@@ -120,4 +120,12 @@ $(document).ready(function() {
   });
 
 
+  //close modal after clicked token
+  $(".list-dropdown").on("click", function() {
+
+    $("#assetModal").modal('hide');
+
+  });
+
+
 });
