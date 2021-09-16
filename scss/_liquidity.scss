@@ -5,6 +5,7 @@
   margin: -80px auto 20px;
 
 
+
   .dataTable {
     .is-right {
       text-align: right;
@@ -87,5 +88,89 @@ table.dataTable tbody th, table.dataTable tbody td {
     margin-right: 5px;
     margin-left: 5px;
 
+  }
+}
+
+.custom-switch {
+  padding-left: 50px;
+  .custom-control-label {
+    cursor: pointer;
+    &:before {
+      width: 40px;
+      height: 20px;
+      left: -50px;
+      //top: .2rem;
+
+      top: 50%;
+      margin-top: -10px;
+
+      border-radius: 20px;
+      background-color: $warning;
+      border-color: $warning;
+
+    }
+    &:after {
+      width: 16px;
+      height: 16px;
+      left: -48px;
+      //top: .3rem;
+
+      top: 50%;
+      margin-top: -8px;
+      background-color: white;
+
+    }
+  }
+  .custom-control-input:checked ~ .custom-control-label {
+    &:before {
+      background: $success;
+      border-color: $success;
+    }
+    &:after {
+      background-color: white;
+      transform: translateX(20px);
+    }
+  }
+}
+
+
+.controls-table {
+  .custom-checkbox,
+  .custom-switch {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7f8faf;
+  }
+  .input-group {
+    .form-control {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .input-group-append {
+      img {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+}
+
+
+.custom-checkbox {
+  .custom-control-label {
+    &:before {
+      border-radius: 3px;
+      border: solid 2px #7f8faf;
+      width: 18px;
+      height: 18px;
+      //top: .2rem;
+      top: 50%;
+      margin-top: -10px;
+    }
+    &:after {
+      top: .25rem;
+      left: -1.45rem;
+      background-size: 14px;
+    }
   }
 }
