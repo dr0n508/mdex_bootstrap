@@ -163,9 +163,11 @@ table.dataTable tbody th, table.dataTable tbody td {
       height: 46px;
       line-height: 46px;
       color: #a3b4d7;
-      border-radius: 4px;
       text-align: center;
       cursor: pointer;
+      background: none;
+      border: none;
+      border-radius: 4px;
     }
     .se-item-name.active {
       background-color: #f0f2f5;

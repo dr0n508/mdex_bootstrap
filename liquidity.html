@@ -237,7 +237,7 @@
 
         <li>
           <div class="input-group">
-            <input type="text" id="myInput" class="form-control" placeholder="Search Mdex LP & Single Token" aria-label="">
+            <input type="text" id="searchTable" class="form-control" placeholder="Search Mdex LP & Single Token" aria-label="">
             <div class="input-group-append">
                   <span class="input-group-text">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAMAAACf4xmcAAAAaVBMVEUAAACA//+qqv+AqtWSkraAlb+JnbGAlbWAlLWCk7CAkLGBkLCBj7KAj6+BkLCAkbCAj7GAkLCAj7CAj7CAkLCAka+AkLCAkLCAkLCAj7CAj6+AkK+AkLCAkLCAj7CAkK9/j7CAkK9/j691/8ocAAAAInRSTlMAAgMGBwwNGCYtLkdJUFdkgpGSlJWWsb/H2Nnj5fHy8/T8LCZhjwAAAQJJREFUOMu1lMtygzAMRQ0BQosTaHkGQyHn/z8yG4dCrHbURe9K9pyRbL2M2XQqmn5clrFvipP5Sed2ZtPcnkUoqVYOWqtEcDUQaAgcvjsAXG3zNM1t7Y9vL74cwFTGz4u4nADcwV8yAHTZ/i7rAIb9+yqAj+gYIfoEqHYhV6CLXt8bdcD6HbYFpiz8fTYB7Zb7GSilXJbA/KxHAbhYwmIHFP7QALVcvxpovN0DVsYs0Ht7BHIZy4HR2wuQylgKLDrs629BlV9QJkSZXmWxlKXXNpKyLX9p8luiGRnuV8UAhpw0zrd7yEnL4Spw0qoROWFxyVyo/+EuOs4ZFafAzMU5+wBGJDYhE3tJQgAAAABJRU5ErkJggg==" alt="">
@@ -245,28 +245,22 @@
             </div>
           </div>
         </li>
-
-        <li>
-          <a class="buttonChange">
-            <button class="column2_search" value="0.0000">List Value</button>
-            <button class="column2_search" value="0.0001" style="display:none">Hide Value</button>
-          </a>
-        </li>
       </ul>
 
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-          <div class="filter-section">
+          <div class="filter-section ">
 
-              <ul class="sele-item">
-                <li class="se-item-name child-item all-filter active"><span> All </span></li>
-                <li class="se-item-name child-item usdt-filter" value="88"><span> USDT </span></li>
-                <li class="se-item-name child-item"><span> ETH </span></li>
-                <li class="se-item-name child-item"><span> MDX </span></li>
-                <li class="se-item-name child-item"><span> HT </span></li>
-                <li class="se-item-name child-item"><span> HUSD </span></li>
-              </ul>
+            <div class="wrap sele-item">
+              <button class="se-item-name child-item all-filter active"><span> All </span></button>
+              <button class="se-item-name child-item usdt-filter" value="USDT"><span> USDT </span></button>
+              <button class="se-item-name child-item eth-filter" value="ETH"><span> ETH </span></button>
+              <button class="se-item-name child-item mdx-filter" value="MDX"><span> MDX </span></button>
+              <button class="se-item-name child-item ht-filter" value="HT"><span> HT </span></button>
+              <button class="se-item-name child-item husd-filter" value="HUSD"><span> HUSD </span></button>
+            </div>
+
 
           </div>
 

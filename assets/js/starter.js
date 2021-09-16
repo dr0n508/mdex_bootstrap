@@ -55,11 +55,9 @@ $(document).ready(function() {
   setInterval(function() { makeTimer(); }, 1000);
 
   //tooltips
-
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
-
 
   //countUp
   const options = {
@@ -73,75 +71,12 @@ $(document).ready(function() {
     console.error(demo.error);
   }
 
-
-  //datatables
-
-  // $('#example').DataTable( {
-  //   "paging":   false,
-  //   "info":     false,
-  //   "dom": '<"toolbar">frtip'
-  // } );
-
-  // $("div.toolbar").html('<b>Custom tool bar! Text/images etc.</b>');
-
-
-  var table = $('#example').DataTable(
-    {
-      "paging":   false,
-      "info":     false,
-      responsive: true,
-      columnDefs: [
-        { orderable: false, targets: 0 },
-        { orderable: true, targets: 1 },
-        { orderable: true, targets: 2 },
-        { orderable: true, targets: 3 },
-        { orderable: true, targets: 4 },
-        { orderable: true, targets: 5 },
-        { orderable: false, targets: 6 }
-      ]
-
-    }
-  );
-
-  // #myInput is a <input type="text"> element
-  $('#myInput').on( 'keyup', function () {
-    table.search( this.value ).draw();
-  } );
-
-  $(".column2_search").click(function () {
-    table.column(5)
-      .search($(this).val())
-      .draw();
-  });
-
-
-  $(".all-filter").click(function () {
-    table.column(4)
-      .search("")
-      .draw();
-  });
-
-
-  $(".usdt-filter").click(function () {
-    table.column(4)
-      .search($(this).val())
-      .draw();
-  });
-
-  $('a.buttonChange').click(function () {
-    $('button', this).toggle();
-  });
-
-  // $('table').dataTable({dom: 'lrt'});
-
-
   //dropdown
   $(".bet-info").on("click", function(e) {
 
     $(this).find(".dropdown-menu").toggleClass("show");
 
   });
-
 
   //close modal after clicked token
   $(".list-dropdown").on("click", function() {
@@ -169,7 +104,70 @@ $(document).ready(function() {
 
   });
 
+  //active for filter table
+  $('.sele-item .se-item-name').click(function() {
+    $(this).siblings('.se-item-name').removeClass('active');
+    $(this).addClass('active');
+  });
 
+
+  //filtration-sorting table
+  var table = $('#example').DataTable(
+    {
+      "paging":   false,
+      "info":     false,
+      responsive: true,
+      columnDefs: [
+        { orderable: false, targets: 0 },
+        { orderable: true, targets: 1 },
+        { orderable: true, targets: 2 },
+        { orderable: true, targets: 3 },
+        { orderable: true, targets: 4 },
+        { orderable: true, targets: 5 },
+        { orderable: false, targets: 6 }
+      ]
+    }
+  );
+
+  $('#searchTable').on( 'keyup', function () {
+    table.search( this.value ).draw();
+  } );
+
+  $(".all-filter").click(function () {
+    table.column(0)
+      .search("")
+      .draw();
+  });
+
+  $(".usdt-filter").click(function () {
+    table.column(0)
+      .search($(this).val())
+      .draw();
+  });
+
+  $(".eth-filter").click(function () {
+    table.column(0)
+      .search($(this).val())
+      .draw();
+  });
+
+  $(".mdx-filter").click(function () {
+    table.column(0)
+      .search($(this).val())
+      .draw();
+  });
+
+  $(".ht-filter").click(function () {
+    table.column(0)
+      .search($(this).val())
+      .draw();
+  });
+
+  $(".husd-filter").click(function () {
+    table.column(0)
+      .search($(this).val())
+      .draw();
+  });
 
 
 });
