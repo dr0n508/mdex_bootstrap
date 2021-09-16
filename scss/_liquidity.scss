@@ -91,23 +91,21 @@ table.dataTable tbody th, table.dataTable tbody td {
   }
 }
 
+
+
 .custom-switch {
   padding-left: 50px;
   .custom-control-label {
     cursor: pointer;
     &:before {
+      top: 50%;
+      left: -50px;
       width: 40px;
       height: 20px;
-      left: -50px;
-      //top: .2rem;
-
-      top: 50%;
       margin-top: -10px;
-
-      border-radius: 20px;
       background-color: $warning;
       border-color: $warning;
-
+      border-radius: 20px;
     }
     &:after {
       width: 16px;
@@ -135,6 +133,9 @@ table.dataTable tbody th, table.dataTable tbody td {
 
 
 .controls-table {
+  .custom-control {
+    margin-right: 20px;
+  }
   .custom-checkbox,
   .custom-switch {
     font-size: 18px;
@@ -143,10 +144,17 @@ table.dataTable tbody th, table.dataTable tbody td {
   }
   .input-group {
     .form-control {
+      height: 40px;
       font-size: 14px;
       font-weight: 500;
+      border: none;
+      border-radius: 20px;
     }
     .input-group-append {
+      .input-group-text {
+        border-radius: 0 20px 20px 0;
+      }
+      height: 40px;
       img {
         width: 19px;
         height: 19px;
