@@ -114,6 +114,14 @@ $(document).ready(function() {
       .draw();
   });
 
+
+  $(".all-filter").click(function () {
+    table.column(4)
+      .search("")
+      .draw();
+  });
+
+
   $(".usdt-filter").click(function () {
     table.column(4)
       .search($(this).val())
