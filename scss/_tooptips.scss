@@ -1,0 +1,29 @@
+.tooltip-table.show {
+  opacity: 1;
+  .tooltip-inner {
+    max-width: 200px;
+    padding: 12px;
+    text-align: left;
+    background-color: white;
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px 0 rgba(75, 255, 239, .2);
+  }
+  .arrow::before {
+    border-color: white transparent transparent transparent;
+    box-shadow: 0 2px 4px 0 rgba(75, 255, 239, .2);
+  }
+}
+
+.tooltip-html {
+  font-size: 12px;
+  font-weight: 600;
+  color: #041843;
+  .arp,
+  .apy {
+    display: flex;
+    justify-content: space-between;
+  }
+  .value {
+    color: $warning;
+  }
+}
