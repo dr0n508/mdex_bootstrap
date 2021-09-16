@@ -89,7 +89,16 @@ $(document).ready(function() {
     {
       "paging":   false,
       "info":     false,
-      responsive: true
+      responsive: true,
+      columnDefs: [
+        { orderable: false, targets: 0 },
+        { orderable: true, targets: 1 },
+        { orderable: true, targets: 2 },
+        { orderable: true, targets: 3 },
+        { orderable: true, targets: 4 },
+        { orderable: true, targets: 5 },
+        { orderable: false, targets: 6 }
+      ]
 
     }
   );
@@ -101,6 +110,12 @@ $(document).ready(function() {
 
   $(".column2_search").click(function () {
     table.column(5)
+      .search($(this).val())
+      .draw();
+  });
+
+  $(".usdt-filter").click(function () {
+    table.column(4)
       .search($(this).val())
       .draw();
   });

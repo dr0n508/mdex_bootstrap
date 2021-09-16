@@ -1,0 +1,53 @@
+.custom-checkbox {
+  .custom-control-label {
+    &:before {
+      border-radius: 3px;
+      border: solid 2px #7f8faf;
+      width: 18px;
+      height: 18px;
+      top: 50%;
+      margin-top: -10px;
+    }
+    &:after {
+      top: .25rem;
+      left: -1.45rem;
+      background-size: 14px;
+    }
+  }
+}
+
+.custom-switch {
+  padding-left: 50px;
+  .custom-control-label {
+    cursor: pointer;
+    &:before {
+      top: 50%;
+      left: -50px;
+      width: 40px;
+      height: 20px;
+      margin-top: -10px;
+      background-color: $warning;
+      border-color: $warning;
+      border-radius: 20px;
+    }
+    &:after {
+      width: 16px;
+      height: 16px;
+      left: -48px;
+      top: 50%;
+      margin-top: -8px;
+      background-color: white;
+
+    }
+  }
+  .custom-control-input:checked ~ .custom-control-label {
+    &:before {
+      background: $success;
+      border-color: $success;
+    }
+    &:after {
+      background-color: white;
+      transform: translateX(20px);
+    }
+  }
+}

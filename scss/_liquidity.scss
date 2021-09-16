@@ -1,8 +1,12 @@
 .table-wrapper {
   position: relative;
   background: rgb(255, 255, 255);
-  border-radius: 10px;
+  border-radius: 4px;
   margin: -80px auto 20px;
+
+  .dataTables_filter {
+    display: none;
+  }
 
 
 
@@ -93,43 +97,7 @@ table.dataTable tbody th, table.dataTable tbody td {
 
 
 
-.custom-switch {
-  padding-left: 50px;
-  .custom-control-label {
-    cursor: pointer;
-    &:before {
-      top: 50%;
-      left: -50px;
-      width: 40px;
-      height: 20px;
-      margin-top: -10px;
-      background-color: $warning;
-      border-color: $warning;
-      border-radius: 20px;
-    }
-    &:after {
-      width: 16px;
-      height: 16px;
-      left: -48px;
-      //top: .3rem;
 
-      top: 50%;
-      margin-top: -8px;
-      background-color: white;
-
-    }
-  }
-  .custom-control-input:checked ~ .custom-control-label {
-    &:before {
-      background: $success;
-      border-color: $success;
-    }
-    &:after {
-      background-color: white;
-      transform: translateX(20px);
-    }
-  }
-}
 
 
 .controls-table {
@@ -162,22 +130,48 @@ table.dataTable tbody th, table.dataTable tbody td {
     }
   }
 }
+.controls-table.nav.nav-tabs {
+  .nav-link.active {
+    font-weight: 700;
+    color: #041843;
+    border: none;
+    border-bottom: solid 3px $success;
 
-.custom-checkbox {
-  .custom-control-label {
-    &:before {
-      border-radius: 3px;
-      border: solid 2px #7f8faf;
-      width: 18px;
-      height: 18px;
-      //top: .2rem;
-      top: 50%;
-      margin-top: -10px;
+  }
+  .nav-link {
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 78px;
+    color: #626e88;
+    border: none;
+    border-bottom: solid 3px transparent;
+    &:hover {
+      color: #041843;
     }
-    &:after {
-      top: .25rem;
-      left: -1.45rem;
-      background-size: 14px;
+  }
+}
+
+
+.filter-section {
+  .sele-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    .se-item-name {
+      min-width: 93px;
+      height: 46px;
+      line-height: 46px;
+      color: #a3b4d7;
+      border-radius: 4px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .se-item-name.active {
+      background-color: #f0f2f5;
+      color: #041843;
+      font-weight: 600;
+      border-radius: 4px;
     }
   }
 }
