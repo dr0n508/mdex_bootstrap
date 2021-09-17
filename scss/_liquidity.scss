@@ -113,12 +113,14 @@
     table.dataTable tbody th, table.dataTable tbody td {
       padding: 10px 5px;
     }
-
     table {
       font-size: 12px;
     }
   }
-  @media only screen and (max-width: 374px) {
+  @media only screen and (max-width: 373px) {
+    table.dataTable tbody th, table.dataTable tbody td {
+      padding: 10px 2px;
+    }
     table {
       font-size: 11px;
     }
