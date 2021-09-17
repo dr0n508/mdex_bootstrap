@@ -58,10 +58,64 @@
   }
 
 
+  @media only screen and (max-width: 1200px) {
+    .el-table_1_column_7 {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    table {
+      font-size: 14px;
+    }
+    .el-table_1_column_3 {
+      display: none;
+    }
 
+    .monthly-output-th {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .el-table_1_column_1 {
+      .trades-one img {
+        display: none;
+      }
+    }
+    .el-table_1_column_2 {
+      .td-span {
+        span {
+          display: block;
+        }
+      }
+    }
+    .el-table_1_column_6 {
+      .td-span span {
+        display: block;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    table {
+      font-size: 13px;
+      tr {
+        th,
+        td {
+          padding-right: 5px;
+          padding-left: 5px;
+        }
+
+      }
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    table {
+      font-size: 12px;
+    }
+  }
   .cell {
     font-weight: 500;
-    .Trades-one {
+    .trades-one {
       img {
         height: 30px;
         margin-left: 15px;
@@ -73,6 +127,7 @@
   }
 
   .topic {
+    flex-shrink: 0;
     img {
       width: 16px;
       height: 16px;
