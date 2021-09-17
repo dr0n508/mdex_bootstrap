@@ -169,5 +169,40 @@ $(document).ready(function() {
       .draw();
   });
 
+  $("#customCheck1").click(function () {
+
+    if ( $(this).is(":checked") ) {
+
+      table.column(4)
+        .search($(this).val())
+        .draw();
+
+    }
+    else {
+      table.column(4)
+        .search("")
+        .draw();
+    }
+
+  });
+
+  $("#customSwitch1").click(function () {
+
+    if ( $(this).is(":checked") ) {
+
+      table.column(4)
+        .search($(this).val())
+        .draw();
+
+    }
+    else {
+      table.column(4)
+        .search("")
+        .draw();
+    }
+
+
+  });
+
 
 });

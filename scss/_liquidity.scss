@@ -3,13 +3,15 @@
   background: rgb(255, 255, 255);
   border-radius: 4px;
   margin: -81px auto 20px;
-
+  .switch-wrapper {
+    margin-left: auto;
+  }
+  .search-wrapper {
+    margin-right: 20px;
+  }
   .dataTables_filter {
     display: none;
   }
-
-
-
   .dataTable {
     .is-right {
       text-align: right;
@@ -130,6 +132,7 @@ table.dataTable tbody th, table.dataTable tbody td {
     }
   }
 }
+
 .controls-table.nav.nav-tabs {
   .nav-link.active {
     font-weight: 700;
