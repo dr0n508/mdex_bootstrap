@@ -3,6 +3,13 @@
   background: rgb(255, 255, 255);
   border-radius: 4px;
   margin: -81px auto 20px;
+  table {
+    tr {
+      td {
+        vertical-align: middle;
+      }
+    }
+  }
   .switch-wrapper {
     margin-left: auto;
   }
@@ -30,6 +37,19 @@
 
 
     .el-table_1_column_7 {
+      .btn-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 32px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #2c72f4;
+        cursor: pointer;
+        border: 1px solid #2c72f4;
+        border-radius: 10px;
+      }
+
       //display: none;
     }
     .el-table_1_column_3 {
