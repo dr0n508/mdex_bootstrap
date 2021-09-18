@@ -57,7 +57,7 @@ $(document).ready(function() {
   //tooltips
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-  })
+  });
 
   //countUp
   const options = {
