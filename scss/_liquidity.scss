@@ -1,3 +1,7 @@
+.table-section {
+  padding-bottom: 90px;
+}
+
 .table-wrapper {
   position: relative;
   background: rgb(255, 255, 255);
@@ -14,7 +18,8 @@
     margin-left: auto;
   }
   .search-wrapper {
-    margin-right: 20px;
+    //margin-right: 20px;
+    padding-right: 20px;
   }
   .dataTables_filter {
     display: none;
@@ -312,6 +317,41 @@ table.dataTable tbody th, table.dataTable tbody td {
       }
     }
   }
+
+  @media only screen and (max-width: 992px) {
+    padding: 20px 20px 0 20px;
+    .switch-wrapper {
+      margin-left: 0;
+      order: -4;
+    }
+    .checkbox-wrapper {
+      order: -3;
+    }
+    .search-wrapper {
+      order: -2;
+      padding-right: 0;
+    }
+    .brake {
+      order: -1;
+      flex-basis: 100%;
+      height: 0;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 5px 5px 0 5px;
+    .custom-checkbox,
+    .custom-switch {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    .search-wrapper {
+      flex-basis: 100%;
+    }
+    .input-group .form-control {
+      font-size: 12px;
+    }
+
+  }
 }
 
 .controls-table.nav.nav-tabs {
@@ -332,6 +372,14 @@ table.dataTable tbody th, table.dataTable tbody td {
     border-bottom: solid 3px transparent;
     &:hover {
       color: #041843;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .nav-link {
+      padding: 0 10px;
+      font-size: 14px;
+      line-height: 50px;
     }
   }
 }
@@ -358,6 +406,28 @@ table.dataTable tbody th, table.dataTable tbody td {
       color: #041843;
       font-weight: 600;
       border-radius: 4px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .sele-item {
+      padding-left: 5px;
+      padding-right: 5px;
+      .se-item-name {
+        min-width: auto;
+        height: auto;
+        font-size: 12px;
+        line-height: 1;
+        margin-right: 5px;
+        padding: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .sele-item .se-item-name {
+      padding: 5px;
     }
   }
 }
