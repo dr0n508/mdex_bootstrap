@@ -10,7 +10,7 @@
 
 import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
-import { CountUp } from '../../assets/js/countUp.min.js';
+// import { CountUp } from '../../assets/js/countUp.min.js';
 // Option 2
 //
 // Import just what we need
@@ -59,17 +59,39 @@ $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip()
   });
 
-  //countUp
-  const options = {
-    startVal: 2712413369.62,
-    decimalPlaces: 2,
+
+
+  // These are the options that I'm going to be using on each statistic
+  var options = {
+    useEasing: true,
+    useGrouping: true,
+    separator: ",",
+    decimal: "."
   };
-  let demo = new CountUp('countElement', 2712913369.62, options);
-  if (!demo.error) {
-    demo.start();
-  } else {
-    console.error(demo.error);
-  }
+
+// Find all Statistics on page, put them inside a variable
+  var countNumber = $(".count-number");
+
+// For each Statistic we find, animate it
+  countNumber.each(function(index) {
+    // Find the value we want to animate (what lives inside the p tags)
+    var value = $(countNumber[index]).html();
+    // Start animating
+    var countNumberAnimation = new CountUp(countNumber[index], 0, value, 2, 2, options);
+    countNumberAnimation.start();
+  });
+
+  //countUp
+  // const options = {
+  //   startVal: 2712413369.62,
+  //   decimalPlaces: 2,
+  // };
+  // let demo = new CountUp('countElement', 2712913369.62, options);
+  // if (!demo.error) {
+  //   demo.start();
+  // } else {
+  //   console.error(demo.error);
+  // }
 
   //dropdown
   $(".bet-info").on("click", function(e) {
@@ -111,23 +133,25 @@ $(document).ready(function() {
   });
 
 
-  //filtration-sorting table
-  var table = $('#example').DataTable(
-    {
-      "paging":   false,
-      "info":     false,
-      responsive: true,
-      columnDefs: [
-        { orderable: false, targets: 0 },
-        { orderable: true, targets: 1 },
-        { orderable: true, targets: 2 },
-        { orderable: true, targets: 3 },
-        { orderable: true, targets: 4 },
-        { orderable: true, targets: 5 },
-        { orderable: false, targets: 6 }
-      ]
-    }
-  );
+    //filtration-sorting table
+    var table = $('#example').DataTable(
+      {
+        "paging":   false,
+        "info":     false,
+        responsive: true,
+        columnDefs: [
+          { orderable: false, targets: 0 },
+          { orderable: true, targets: 1 },
+          { orderable: true, targets: 2 },
+          { orderable: true, targets: 3 },
+          { orderable: true, targets: 4 },
+          { orderable: true, targets: 5 },
+          { orderable: false, targets: 6 }
+        ]
+      }
+    );
+
+
 
   $('#searchTable').on( 'keyup', function () {
     table.search( this.value ).draw();
@@ -207,6 +231,8 @@ $(document).ready(function() {
 
 
   });
+
+
 
 
 });
