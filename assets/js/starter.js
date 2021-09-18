@@ -188,6 +188,10 @@ $(document).ready(function() {
 
   $("#customSwitch1").click(function () {
 
+    $("#customSwitch1 ~ .custom-control-label").text(function(i, text){
+        return text === "Processing" ? "Over" : "Processing";
+      });
+
     if ( $(this).is(":checked") ) {
 
       table.column(4)
