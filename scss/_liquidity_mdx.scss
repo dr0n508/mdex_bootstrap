@@ -1,0 +1,112 @@
+.liquidity-mdx-page {
+  .boardroom-pool {
+    padding-bottom: 90px;
+  }
+  .btn {
+    box-shadow: 0 20px 30px 0 rgba(10, 20, 111, .05);
+  }
+  .btn:disabled {
+    background: #dde2eb!important;
+  }
+  .boardroom-pool-cards {
+    margin-top: -60px;
+  }
+  .pool-card{
+    width: 300px;
+    padding: 35px 50px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px 0 rgba(10, 20, 111, .05);
+    &:last-child {
+      margin-left: 30px;
+    }
+    .pool-card-icon{
+      width: 50px;
+      height: 50px;
+    }
+    .pool-card-text {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #626e88;
+    }
+    .pool-card-price {
+      font-size: 48px;
+      font-weight: 500;
+    }
+    .pool-card-buttons {
+      text-align: center;
+    }
+  }
+  .pool-settle-provide,
+  .tips-wrapper {
+    text-align: center;
+    width: 630px;
+    margin: 40px auto 0;
+    .btn {
+      width: 250px;
+    }
+  }
+  .tips-wrapper {
+    font-weight: 500;
+    color: #1d1d1e;
+    b {
+      font-weight: 500;
+      color: red;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .boardroom-pool-cards {
+      flex-direction: column;
+      .pool-card {
+        padding: 16px 16px 13px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .pool-card-text{
+          margin-top: 15px;
+          margin-bottom: 6px;
+        }
+        .pool-card-price {
+          color: $success;
+        }
+      }
+      .pool-card:last-child {
+        margin: 30px 0 0 0;
+      }
+    }
+    .pool-settle-provide,
+    .tips-wrapper {
+      width: 100%;
+      text-align: left;
+    }
+    .pool-settle-provide {
+      flex-direction: column;
+      .btn {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .btn:last-child {
+        margin-top: 30px;
+      }
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .boardroom-pool-cards .pool-card {
+      .pool-card-text {
+        color: #4b4d53;
+        font-weight: 500;
+      }
+      .pool-card-price {
+        margin-bottom: 0;
+        font-size: 26px;
+      }
+    }
+    .tips-wrapper {
+      font-size: 12px;
+    }
+  }
+}
