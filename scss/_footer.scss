@@ -1,12 +1,12 @@
 .footer-desktop {
-  background-color: #101523;
   padding: 50px 0 10px;
+  background-color: #101523;
   .logo-footer {
     display: inline-block;
     margin-bottom: 20px;
     img {
-      height: 49px;
       width: 49px;
+      height: 49px;
     }
   }
   .social-list-footer {
@@ -16,9 +16,8 @@
         display: inline-block;
         margin-right: 15px;
         img {
-          height: 20px;
           width: 22px;
-
+          height: 20px;
           filter: grayscale(100%);
           opacity: .5;
         }
@@ -45,10 +44,10 @@
       a {
         display: inline-block;
         margin-bottom: 10px;
-        color: #a8a8a8;
         font-size: 14px;
-        line-height: 20px;
         font-weight: 500;
+        line-height: 20px;
+        color: #a8a8a8;
         &:hover {
           color: white;
         }
@@ -57,32 +56,30 @@
   }
 }
 
-
 .footer-mobile {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
   z-index: 999;
+  width: 100%;
   box-shadow: 0 -3px 5px 0 rgba(135,132,132,.05);
   background-color: white;
   .nav-link {
     display: flex;
-    flex-direction: column;
     position: relative;
+    flex-direction: column;
     .title-link {
       font-size: 12px;
-      color: #8890a1;
       font-weight: 500;
+      color: #8890a1;
     }
     .badge {
       position: absolute;
-      right: -10px;
       top: 6px;
+      right: -10px;
       font-size: 60%;
       font-weight: 500;
       border-radius: .4rem .4rem .4rem 0;
-
     }
     .icon-home {
       background: url("../../img/icon/footer/home-icon.png");
@@ -100,9 +97,9 @@
       background: url("../../img/icon/footer/boardroom.png");
     }
     .icon {
+      display: inline-block;
       width: 24px;
       height: 24px;
-      display: inline-block;
       margin: 0 auto 3px;
       background-size: 24px;
     }
@@ -132,7 +129,6 @@
 
 @media only screen and (max-width: 768px) {
   .footer-mobile {
-
     .nav-link {
       .title-link {
         font-size: 10px;
@@ -144,7 +140,7 @@
 @media only screen and (max-width: 350px) {
   .footer-mobile {
     .nav-link {
-      padding: .5rem .5rem;
+      padding: .5rem;
     }
   }
 }
