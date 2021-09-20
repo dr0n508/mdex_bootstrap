@@ -14,20 +14,9 @@
 // Bring in Bootstrap
 //
 
-// Option 1
-//
-// Import all of Bootstrap's CSS
-
-//@import "bootstrap/scss/bootstrap";
-
-// Option 2
-//
-// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
-
 // Toggle global options
 $enable-gradients: true;
 $enable-shadows: true;
-
 
 //changes to bootsrap4
 @import "variables";
@@ -90,28 +79,25 @@ $enable-shadows: true;
 @import "modal";
 @import "slider";
 
-//
-// Custom styles
-
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
 html,
 body {
   height: 100%;
 }
-//
 
 body {
-  font-size: 16px;
-  font-weight: 400;
   min-width: 320px;
   position: relative;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 400;
   font-family: $default;
   color: $text;
-  overflow-x: hidden;
   background-color: rgb(245, 245, 245);
 }
 
@@ -121,10 +107,10 @@ ul {
 
 img,
 svg {
-  max-height: 100%;
-  max-width: 100%;
   width: auto;
+  max-width: 100%;
   height: auto;
+  max-height: 100%;
 }
 
 .hide-desktop {
@@ -143,6 +129,3 @@ svg {
     display: block;
   }
 }
-
-
-

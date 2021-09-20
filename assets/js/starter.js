@@ -1,26 +1,7 @@
 // Importing JavaScript
 //
-// You have two choices for including Bootstrap's JS files—the whole thing,
-// or just the bits that you need.
-
-
-// Option 1
-//
-// Import Bootstrap's bundle (all of Bootstrap's JS + Popper.js dependency)
 
 import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
-
-// import { CountUp } from '../../assets/js/countUp.min.js';
-// Option 2
-//
-// Import just what we need
-
-// If you're importing tooltips or popovers, be sure to include our Popper.js dependency
-// import "../../node_modules/popper.js/dist/popper.min.js";
-
-// import "../../node_modules/bootstrap/js/dist/util.js";
-// import "../../node_modules/bootstrap/js/dist/modal.js";
-
 
 $(document).ready(function() {
 
@@ -59,9 +40,7 @@ $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip()
   });
 
-
-
-  // These are the options that I'm going to be using on each statistic
+  // animation changing numbers
   var options = {
     useEasing: true,
     useGrouping: true,
@@ -69,10 +48,9 @@ $(document).ready(function() {
     decimal: "."
   };
 
-// Find all Statistics on page, put them inside a variable
   var countNumber = $(".count-number");
 
-// For each Statistic we find, animate it
+// For each countNumber we find, animate it
   countNumber.each(function(index) {
     // Find the value we want to animate (what lives inside the p tags)
     var value = $(countNumber[index]).html();
@@ -80,18 +58,6 @@ $(document).ready(function() {
     var countNumberAnimation = new CountUp(countNumber[index], 0, value, 2, 2, options);
     countNumberAnimation.start();
   });
-
-  //countUp
-  // const options = {
-  //   startVal: 2712413369.62,
-  //   decimalPlaces: 2,
-  // };
-  // let demo = new CountUp('countElement', 2712913369.62, options);
-  // if (!demo.error) {
-  //   demo.start();
-  // } else {
-  //   console.error(demo.error);
-  // }
 
   //dropdown
   $(".bet-info").on("click", function(e) {
@@ -132,26 +98,23 @@ $(document).ready(function() {
     $(this).addClass('active');
   });
 
-
-    //filtration-sorting table
-    var table = $('#example').DataTable(
-      {
-        "paging":   false,
-        "info":     false,
-        responsive: true,
-        columnDefs: [
-          { orderable: false, targets: 0 },
-          { orderable: true, targets: 1 },
-          { orderable: true, targets: 2 },
-          { orderable: true, targets: 3 },
-          { orderable: true, targets: 4 },
-          { orderable: true, targets: 5 },
-          { orderable: false, targets: 6 }
-        ]
-      }
-    );
-
-
+  //filtration-sorting table
+  var table = $('#example').DataTable(
+    {
+      "paging":   false,
+      "info":     false,
+      responsive: true,
+      columnDefs: [
+        { orderable: false, targets: 0 },
+        { orderable: true, targets: 1 },
+        { orderable: true, targets: 2 },
+        { orderable: true, targets: 3 },
+        { orderable: true, targets: 4 },
+        { orderable: true, targets: 5 },
+        { orderable: false, targets: 6 }
+      ]
+    }
+  );
 
   $('#searchTable').on( 'keyup', function () {
     table.search( this.value ).draw();
@@ -229,10 +192,6 @@ $(document).ready(function() {
         .draw();
     }
 
-
   });
-
-
-
 
 });
