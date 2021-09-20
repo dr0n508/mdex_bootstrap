@@ -7,10 +7,19 @@
       }
     }
   }
+  .banner-bar {
+    @media only screen and (max-width: 768px) {
+      padding-bottom: 110px;
+      .banner-title {
+        padding-top: 20px;
+        font-size: 24px;
+      }
+    }
+  }
 }
 
 .wind-mining-section {
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   .powered-text {
     margin-top: 10px;
     font-size: 12px;
@@ -51,10 +60,8 @@
       background-size: cover;
     }
     .option-img {
-      margin-right: 0.571429em;
+      margin-right: .57em;
       img {
-        //width: 20px;
-        //height: 20px;
         float: left;
       }
     }
@@ -84,8 +91,8 @@
         border-radius: 9px;
         box-shadow: 0 5px 15px 0 rgba(15, 21, 77, .08);
         .selete-img {
-          height: 12px;
           width: 7px;
+          height: 12px;
         }
       }
     }
@@ -102,7 +109,7 @@
     .bet-hide {
       .assets-body {
         width: 240px;
-        padding: 37px 13px 13px 13px;
+        padding: 37px 13px 13px;
         .close-icon {
           position: absolute;
           top: 18px;
@@ -130,8 +137,8 @@
     height: 17px;
     font-size: 12px;
     font-weight: 600;
-    color: #626e88;
     line-height: 17px;
+    color: #626e88;
   }
   .quota {
     .quota-zj {
@@ -145,25 +152,19 @@
   }
   .assets-item {
     height: 50px;
-    background: #f1f3f7;
-    border-radius: 8px;
     margin-top: 10px;
     margin-bottom: 10px;
+    background: #f1f3f7;
+    border-radius: 8px;
     .assets-input {
-      padding-left: 13px;
       width: 100%;
-      img {
-        //height: 20px;
-        //width: 20px;
-        //border-radius: 50%;
-      }
+      padding-left: 13px;
       input {
         width: 100%;
         height: 50px;
-        background: #f1f3f7;
-        //margin-left: 12px;
         font-size: 14px;
         font-weight: 500;
+        background: #f1f3f7;
         border: none;
         outline: none;
       }
@@ -172,27 +173,26 @@
       padding-right: 13px;
       .assets-type {
         display: inline-block;
-        line-height: 20px;
         font-size: 16px;
         font-weight: 500;
+        line-height: 20px;
         color: #181f36;
       }
       .assets-max {
         display: inline-block;
-        margin-left: 5px;
-        cursor: pointer;
         min-width: 46px;
         height: 20px;
-        line-height: 20px;
-        text-align: center;
-        box-shadow: 0 2px 4px 0 rgba(75, 255, 239, .2);
-        border-radius: 4px;
+        margin-left: 5px;
         font-size: 12px;
-        outline: none;
-        border: none;
+        line-height: 20px;
         color: #fff;
+        text-align: center;
         background: #03ad90;
-
+        border: none;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0 2px 4px 0 rgba(75, 255, 239, .2);
         &:disabled {
           background: #dde2eb!important;
           box-shadow: 0 10px 10px 0 rgba(128, 139, 159, .15)!important;
@@ -217,9 +217,9 @@
     }
   }
   .selete-name {
-    line-height: 20px;
     font-size: 12px;
-    font-weight: 550;
+    font-weight: 500;
+    line-height: 20px;
     color: #181f36;
     .tip-let {
       color: #cf1414;
@@ -231,8 +231,8 @@
     font-size: 18px;
   }
   .quota-name {
-    padding-top: 5px;
     height: 20px;
+    padding-top: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 12px;
@@ -245,9 +245,9 @@
   .record {
     height: 20px;
     padding-top: 15px;
-    line-height: 22px;
     font-size: 14px;
     font-weight: 500;
+    line-height: 22px;
     text-decoration: underline;
     cursor: pointer;
   }
@@ -261,20 +261,20 @@
     }
   }
   .not-history {
-    min-height: 500px;
     width: 100%;
+    min-height: 500px;
     font-size: 12px;
     font-weight: 500;
     color: #7f8faf;
     img {
-      height: 61px;
       width: 67px;
+      height: 61px;
     }
   }
   .historyContainer {
+    padding: 10px;
     max-height: 550px;
     overflow-y: scroll;
-    padding: 10px;
   }
   @media only screen and (max-width: 350px) {
     padding: 14px;
@@ -295,22 +295,17 @@
 }
 
 .list-dropdown {
-  padding: 0 13px;
   height: 44px;
+  padding: 0 13px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #e6e6e6;
   font-weight: 500;
+  border-bottom: 1px solid #e6e6e6;
   &:hover {
     background: #f6f7fb;
     border-radius: 18px;
   }
   .start {
     font-size: 14px;
-  }
-  img {
-    //width: 20px;
-    //height: 20px;
-    //border-radius: 50%;
   }
   .span-img {
     display: inline-block;
@@ -329,8 +324,8 @@
 }
 
 .active-check {
-  margin-left: 10px;
   margin-right: 0;
+  margin-left: 10px;
 }
 
 
