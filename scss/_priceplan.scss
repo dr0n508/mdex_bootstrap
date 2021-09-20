@@ -7,14 +7,20 @@
   }
   .banner {
     padding: 130px 140px 50px;
-    border-radius: 20px;
-    background: url("../../img/priceplan-page/banner-bg.png") 50% 50% no-repeat;
+    background: url("../../img/priceplan-page/banner-bg.png") 0% 50% no-repeat;
     background-size: cover;
+    border-radius: 20px;
+    @media only screen and (max-width: 768px) {
+      padding: 130px 40px 50px;
+    }
+    @media only screen and (max-width: 450px) {
+      background: url("../../img/priceplan-page/banner-bg.png") 10% 50% no-repeat;
+      background-size: cover;
+    }
   }
   .plan-section {
     padding: 30px;
     margin-top: 15px;
-
     background: white;
     border-radius: 20px;
     h1 {
@@ -37,14 +43,22 @@
       list-style-position: inside;
       li {
         margin-bottom: 5px;
-        a {
-
-        }
       }
     }
     table {
       font-size: 14px;
       font-weight: 500;
+    }
+  }
+}
+
+.priceplan-page {
+  @media only screen and (max-width: 768px) {
+    .banner-bar {
+      padding-bottom: 110px;
+    }
+    .introduce-section .plan-section h1  {
+      font-size: 22px;
     }
   }
 }
