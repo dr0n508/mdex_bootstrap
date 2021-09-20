@@ -1,17 +1,56 @@
+.liquidity-mdx {
+  display: inline-block;
+  padding: 0 22px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 54px;
+  color: #fff;
+  background: linear-gradient( 270deg ,#05d2bf, #02c09f);
+  border-radius: 10px;
+  .liquidity-mdx-wrap {
+    display: flex;
+    span {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 5px;
+    color: $dark;
+    background: white;
+    .liquidity-mdx-wrap {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 0;
+      font-size: 12px;
+      line-height: 24px;
+      .count-number {
+        font-size: 18px;
+        margin: 0;
+      }
+      .currency {
+        display: none;
+      }
+    }
+  }
+}
+
 .table-section {
-  padding-bottom: 90px;
+  padding-bottom: 30px;
 }
 
 .table-wrapper {
   position: relative;
-  background: rgb(255, 255, 255);
-  border-radius: 4px;
   margin: -81px auto 20px;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
   table {
-    tr {
-      td {
-        vertical-align: middle;
-      }
+    tr td {
+      vertical-align: middle;
     }
   }
   .switch-wrapper {
@@ -53,7 +92,6 @@
       }
     }
   }
-
   @media only screen and (max-width: 1200px) {
     .el-table_1_column_7 {
       display: none;
@@ -66,12 +104,10 @@
     .el-table_1_column_3 {
       display: none;
     }
-
     .monthly-output-th {
       display: none;
     }
   }
-
   @media only screen and (max-width: 768px) {
     .el-table_1_column_1 {
       .trades-one img {
@@ -100,7 +136,8 @@
           }
         }
       }
-      tbody, thead {
+      tbody,
+      thead {
         tr {
           display: flex;
           flex-wrap: wrap;
@@ -221,8 +258,6 @@
   }
 }
 
-
-//fix dataTable slyles
 table.dataTable thead th, table.dataTable thead td,
 table.dataTable.no-footer {
   border-bottom: #eee;
@@ -230,24 +265,6 @@ table.dataTable.no-footer {
 
 table.dataTable tbody th, table.dataTable tbody td {
   padding: 25px 10px;
-}
-
-.liquidity-mdx {
-  display: inline-block;
-  padding: 0 22px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 54px;
-  color: #fff;
-  background: linear-gradient( 270deg ,#05d2bf, #02c09f);
-  border-radius: 10px;
-  span {
-    margin-right: 5px;
-    margin-left: 5px;
-
-  }
 }
 
 .controls-table {
@@ -279,12 +296,11 @@ table.dataTable tbody th, table.dataTable tbody td {
       }
     }
   }
-
   @media only screen and (max-width: 992px) {
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 0;
     .switch-wrapper {
-      margin-left: 0;
       order: -4;
+      margin-left: 0;
     }
     .checkbox-wrapper {
       order: -3;
@@ -294,13 +310,13 @@ table.dataTable tbody th, table.dataTable tbody td {
       padding-right: 0;
     }
     .brake {
-      order: -1;
       flex-basis: 100%;
+      order: -1;
       height: 0;
     }
   }
   @media only screen and (max-width: 768px) {
-    padding: 5px 5px 0 5px;
+    padding: 5px 5px 0;
     .custom-checkbox,
     .custom-switch {
       margin-bottom: 5px;
@@ -312,7 +328,6 @@ table.dataTable tbody th, table.dataTable tbody td {
     .input-group .form-control {
       font-size: 12px;
     }
-
   }
 }
 
@@ -322,7 +337,6 @@ table.dataTable tbody th, table.dataTable tbody td {
     color: #041843;
     border: none;
     border-bottom: solid 3px $success;
-
   }
   .nav-link {
     padding: 0 20px;
@@ -336,7 +350,6 @@ table.dataTable tbody th, table.dataTable tbody td {
       color: #041843;
     }
   }
-
   @media only screen and (max-width: 768px) {
     .nav-link {
       padding: 0 10px;
@@ -363,23 +376,23 @@ table.dataTable tbody th, table.dataTable tbody td {
       border-radius: 4px;
     }
     .se-item-name.active {
-      background-color: #f0f2f5;
-      color: #041843;
       font-weight: 600;
+      color: #041843;
+      background-color: #f0f2f5;
       border-radius: 4px;
     }
   }
   @media only screen and (max-width: 768px) {
     .sele-item {
-      padding-left: 5px;
       padding-right: 5px;
+      padding-left: 5px;
       .se-item-name {
         min-width: auto;
+        padding: 10px;
         height: auto;
+        margin-right: 5px;
         font-size: 12px;
         line-height: 1;
-        margin-right: 5px;
-        padding: 10px;
         &:last-child {
           margin-right: 0;
         }
@@ -389,6 +402,33 @@ table.dataTable tbody th, table.dataTable tbody td {
   @media only screen and (max-width: 450px) {
     .sele-item .se-item-name {
       padding: 5px;
+    }
+  }
+}
+
+.cta-section {
+  padding-bottom: 90px;
+  .cta-banner {
+    padding: 40px 80px;
+    color: white;
+    text-align: center;
+    background: url("../../img/bg/liquidity/cta-banner-bg.png") 50% 50% no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    .title-banner {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .btn {
+      font-weight: 600;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .cta-banner {
+      padding: 40px;
+      .title-banner {
+        font-size: 16px;
+      }
     }
   }
 }

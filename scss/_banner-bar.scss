@@ -14,4 +14,8 @@
     line-height: 28px;
     color: hsla(0, 0%, 100%, .8);
   }
+
+  @media only screen and (max-width: 768px) {
+    padding: 50px 0 75px;
+  }
 }

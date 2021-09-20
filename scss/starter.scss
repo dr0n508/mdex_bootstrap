@@ -70,11 +70,6 @@ $enable-shadows: true;
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/print";
 
-
-
-
-
-
 // Style Bootstrap icons
 .bi {
   fill: currentColor;
@@ -102,11 +97,11 @@ $enable-shadows: true;
   padding: 0;
   box-sizing: border-box;
 }
-html, body {height: 100%;}
+html,
+body {
+  height: 100%;
+}
 //
-
-
-
 
 body {
   font-size: 16px;
@@ -119,13 +114,34 @@ body {
   background-color: rgb(245, 245, 245);
 }
 
-ul {list-style: none;}
+ul {
+  list-style: none;
+}
 
-img, svg {
+img,
+svg {
   max-height: 100%;
   max-width: 100%;
   width: auto;
   height: auto;
 }
+
+.hide-desktop {
+  display: none;
+}
+
+.hide-mobile {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+  .hide-desktop {
+    display: block;
+  }
+}
+
 
 
